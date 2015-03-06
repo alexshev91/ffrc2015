@@ -1,0 +1,22 @@
+[
+{
+    "sessionNumber": 1,
+    "name": "TestBreakoutName1",
+    "roomName": "TestBreakoutRoomName1",
+    "speaker": "TestBreakoutSpeakerString1",
+    "description": "TestBreakoutDescription1",
+    "numberSignedUp": 455,
+    "maxCapacity": 500,
+    "users": []
+  },
+  {
+    "sessionNumber": 4,
+    "name": "TestBreakoutName2",
+    "roomName": "TestBreakoutRoomName2",
+    "speaker": "TestBreakoutSpeakerString2",
+    "description": "TestBreakoutDescription2",
+    "numberSignedUp": 455,
+    "maxCapacity": 1000,
+    "users": []
+  }
+]

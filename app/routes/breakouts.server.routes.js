@@ -6,13 +6,13 @@ module.exports = function(app) {
 
 	// Breakouts Routes
 	app.route('/breakouts')
-		.get(breakouts.list)
-		.post(users.requiresLogin, breakouts.create);
+		.get(breakouts.list);
+		// .post(users.requiresLogin, breakouts.create);
 
 	app.route('/breakouts/:breakoutId')
-		.get(breakouts.read)
-		.put(users.requiresLogin, breakouts.update)
-		.delete(users.requiresLogin, breakouts.delete);
+		.get(breakouts.read);
+		// .put(users.requiresLogin, breakouts.update)
+		// .delete(users.requiresLogin, breakouts.delete);
 
 	// Finish by binding the Breakout middleware
 	app.param('breakoutId', breakouts.breakoutByID);

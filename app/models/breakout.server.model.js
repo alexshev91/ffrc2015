@@ -33,7 +33,7 @@ var BreakoutSchema = new Schema({
 	maxCapacity: {
 		type: Number,
 	},
-	user: {
+	users: {
 		type: Array,
 	}
 });
