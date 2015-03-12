@@ -2,18 +2,118 @@
     <div class="page-header">
         <h1>Breakouts</h1>
     </div>
-    <div class="list-group">
-        <a data-ng-repeat="breakout in breakouts" data-ng-href="#!/breakouts/{{breakout._id}}" class="list-group-item">
-			<small class="list-group-item-text">
-				Posted on
-				<span data-ng-bind="breakout.created | date:'medium'"></span>
-				by
-				<span data-ng-bind="breakout.user.displayName"></span>
-			</small>
-			<h4 class="list-group-item-heading" data-ng-bind="breakout.name"></h4>
-        </a>
+
+<form data-ng-submit="submitSchedule()" name='sessionform'>
+
+
+
+
+<div class='container'>
+    <h1>Session ONE</h1>
+    <div class='list-group'>
+        <label class="list-group-item col-md-6 odd" for="{{breakout}}" ng-repeat="breakout in sessOne">
+            <div popover="{{breakout.description}}" popover-title='{{breakout.speaker}}' popover-trigger="mouseenter" popover-placement='bottom'>
+                    <input id="{{breakout}}" type="radio"
+                    ng-model="sessionform.sessionone" data-ng-value="breakout">
+                    {{breakout.name}}
+             </div>
+        </label>
     </div>
+</div>
+
+
+
+<div class='container'>
+    <h1>Session TWO</h1>
+    <div class='list-group'>
+        <label class="list-group-item col-md-6 odd" for="{{breakout}}" ng-repeat="breakout in sessTwo">
+            <div popover="{{breakout.description}}" popover-title='{{breakout.speaker}}' popover-trigger="mouseenter">
+                        <input id="{{breakout}}" type="radio"
+                        ng-model="sessionform.sessiontwo" data-ng-value="breakout">
+                        {{breakout.name}}
+            </div>
+        </label>
+    </div>
+</div>
+
+<div class='container'>
+<h1>Session THREE</h1>
+<div class='list-group'>
+    <label class="list-group-item col-md-6 odd" for="{{breakout}}" ng-repeat="breakout in sessThree">
+        <div popover="{{breakout.description}}" popover-title='{{breakout.speaker}}' popover-trigger="mouseenter">
+                <input id="{{breakout}}" type="radio"
+                ng-model="sessionform.sessionthree" data-ng-value="breakout">
+               {{breakout.name}}
+        </div>
+    </label>
+</div>
+</div>
+
+<div class='container'>
+    <h1>Session FOUR</h1>
+    <div class='list-group'>
+        <label class="list-group-item col-md-6 odd" for="{{breakout}}" ng-repeat="breakout in sessFour">
+            <div popover="{{breakout.description}}" popover-title='{{breakout.speaker}}' popover-trigger="mouseenter">
+                    <input id="{{breakout}}" type="radio"
+                    ng-model="sessionform.sessionfour" data-ng-value="breakout">
+                    {{breakout.name}}
+           </div>
+        </label>
+    </div>
+</div>
+
+
+<div class='container'>
+    <h1>Session FIVE</h1>
+    <div class='list-group'>
+        <label class="list-group-item col-md-6 odd" for="{{breakout}}" ng-repeat="breakout in sessFive">
+            <div popover="{{breakout.description}}" popover-title='{{breakout.speaker}}' popover-trigger="mouseenter">
+                    <input id="{{breakout}}" type="radio"
+                    ng-model="sessionform.sessionfive" data-ng-value="breakout">
+                     {{breakout.name}}
+            </div>
+        </label>
+    </div>
+</div>
+
+
+<div class='container'>
+    <h1>Session SIX</h1>
+    <div class='list-group'>
+        <label class="list-group-item col-md-6 odd" for="{{breakout}}" ng-repeat="breakout in sessSix">
+            <div popover="{{breakout.description}}" popover-title='{{breakout.speaker}}' popover-trigger="mouseenter">
+                    <input id="{{breakout}}" type="radio"
+                    ng-model="sessionform.sessionsix" data-ng-value="breakout">
+                    {{breakout.name}}
+            </div>
+        </label>
+    </div>
+</div>
+
+
+<div class='container'>
+    <h1>Session SEVEN</h1>
+    <div class='list-group'>
+        <label class="list-group-item col-md-6 odd" for="{{breakout}}" ng-repeat="breakout in sessSeven">
+            <div popover="{{breakout.description}}" popover-title='{{breakout.speaker}}' popover-trigger="mouseenter">
+                    <input id="{{breakout}}" type="radio"
+                    ng-model="sessionform.sessionseven" data-ng-value="breakout">
+                    {{breakout.name}}
+            </div>
+        </label>
+    </div>
+</div>
+
+
+
+<button type="submit" class="btn btn-danger btn-lg">Submit</button>
+
+</form>
+
     <div class="alert alert-warning text-center" data-ng-hide="!breakouts.$resolved || breakouts.length">
     	No Breakouts yet, why don't you <a href="/#!/breakouts/create">create one</a>?
     </div>
 </section>
+
+
+

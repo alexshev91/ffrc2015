@@ -13,6 +13,14 @@ angular.module('breakouts').config(['$stateProvider',
 			url: '/breakouts/create',
 			templateUrl: 'modules/breakouts/views/create-breakout.client.view.html'
 		}).
+		state('viewAdminGrid', {
+			url: '/admin/grid',
+			templateUrl: 'modules/breakouts/views/adminGrid-breakout.client.view.html'
+		}).
+		state('viewAdminBreakoutsByName', {
+			url: '/admin/grid/breakouts/:breakoutname',
+			templateUrl: 'modules/breakouts/views/adminBreakoutsWithOneName-breakout.client.view.html'
+		}).
 		state('viewBreakout', {
 			url: '/breakouts/:breakoutId',
 			templateUrl: 'modules/breakouts/views/view-breakout.client.view.html'

@@ -1,0 +1,28 @@
+<section data-ng-controller="BreakoutsController" data-ng-init="findBreakoutForAdmin()">
+
+  <div class="page-header">
+    <h1 data-ng-bind="nameOfBreakout"></h1>
+  </div>
+
+
+<ul class='list-group'>
+            <li class="list-group-item" for="{{breakout}}" ng-repeat="breakout in breakoutsByName">
+
+            <h2>Session {{breakout.sessionNumber}}</h2>
+            {{breakout.name}}
+            <h3>Capacity: {{breakout.users.length}}/{{breakout.maxCapacity}}</h3>
+
+
+            <ul ng-repeat="user in breakout.users track by $index">
+                  <li>{{user.email}}</li>
+            </ul>
+
+
+            </li>
+
+</ul>
+
+
+
+
+</section>

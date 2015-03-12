@@ -1,22 +1,598 @@
 [
-{
+
+  {
     "sessionNumber": 1,
-    "name": "TestBreakoutName1",
-    "roomName": "TestBreakoutRoomName1",
-    "speaker": "TestBreakoutSpeakerString1",
-    "description": "TestBreakoutDescription1",
-    "numberSignedUp": 455,
-    "maxCapacity": 500,
+    "name": "Natural Labeling",
+    "roomName": "Left Ballroom",
+    "speaker": "Dorothy Clemmer, Maple Leaf Foods",
+    "description": "Understand the ins and outs of Natural labeling.  Explore the differences between USDA and FDA definitions of “Natural”.  Discuss the impact on retail, restaurants and customer perception, and explore the pros and cons of this contentious claim.",
+    "maxCapacity": 45,
+    "users": []
+  },
+  {
+    "sessionNumber": 6,
+    "name": "Natural Labeling",
+    "roomName": "Middle Ballroom",
+    "speaker": "Dorothy Clemmer, Maple Leaf Foods",
+    "description": "Understand the ins and outs of Natural labeling.  Explore the differences between USDA and FDA definitions of “Natural”.  Discuss the impact on retail, restaurants and customer perception, and explore the pros and cons of this contentious claim.",
+    "maxCapacity": 45,
+    "users": []
+  },
+
+
+
+  {
+    "sessionNumber": 1,
+    "name": "Prepping for the New NFP",
+    "roomName": "Middle Ballroom",
+    "speaker": "Justin Crews, Pinnacle Foods",
+    "description": "Soon, two final rules will be released by the FDA, forcing the largest change in nutrition labeling in 20 years.  Companies will need to decide to either re-label or reformulate their products.  Learn the specifics of the proposed rule (new formats, serving sizes, nutrients, vitamins & daily values) and what you can do to help your company prepare for this massive change.",
+    "maxCapacity": 45,
+    "users": []
+  },
+  {
+    "sessionNumber": 2,
+    "name": "Prepping for the New NFP",
+    "roomName": "Middle Ballroom",
+    "speaker": "Justin Crews, Pinnacle Foods",
+    "description": "Soon, two final rules will be released by the FDA, forcing the largest change in nutrition labeling in 20 years.  Companies will need to decide to either re-label or reformulate their products.  Learn the specifics of the proposed rule (new formats, serving sizes, nutrients, vitamins & daily values) and what you can do to help your company prepare for this massive change.",
+    "maxCapacity": 45,
     "users": []
   },
   {
     "sessionNumber": 4,
-    "name": "TestBreakoutName2",
-    "roomName": "TestBreakoutRoomName2",
-    "speaker": "TestBreakoutSpeakerString2",
-    "description": "TestBreakoutDescription2",
-    "numberSignedUp": 455,
-    "maxCapacity": 1000,
+    "name": "Prepping for the New NFP",
+    "roomName": "Right Ballroom",
+    "speaker": "Justin Crews, Pinnacle Foods",
+    "description": "Soon, two final rules will be released by the FDA, forcing the largest change in nutrition labeling in 20 years.  Companies will need to decide to either re-label or reformulate their products.  Learn the specifics of the proposed rule (new formats, serving sizes, nutrients, vitamins & daily values) and what you can do to help your company prepare for this massive change.",
+    "maxCapacity": 45,
+    "users": []
+  },
+
+
+
+  {
+    "sessionNumber": 1,
+    "name": "Product Naming & Ingredient Labeling",
+    "roomName": "Right Ballroom",
+    "speaker": "Jesse Waller, Smithfield-Farmland     Justin Crews, Pinnacle Foods  USDA-FSIS-LPDS staff",
+    "description": "Explore USDA & FDA regulations on product naming & ingredients labeling.  Find out the difference between common, usual, descriptive, standard & fanciful names and what conventions are required for each.  Learn about the components of identity statements including many types of qualifiers. Discover the intricacies of declaring ingredients, including choosing a composite ingredient listing.",
+    "maxCapacity": 45,
+    "users": []
+  },
+  {
+    "sessionNumber": 2,
+    "name": "Product Naming & Ingredient Labeling",
+    "roomName": "Right Ballroom",
+    "speaker": "Jesse Waller, Smithfield-Farmland     Justin Crews, Pinnacle Foods  USDA-FSIS-LPDS staff",
+    "description": "Explore USDA & FDA regulations on product naming & ingredients labeling.  Find out the difference between common, usual, descriptive, standard & fanciful names and what conventions are required for each.  Learn about the components of identity statements including many types of qualifiers. Discover the intricacies of declaring ingredients, including choosing a composite ingredient listing.",
+    "maxCapacity": 45,
+    "users": []
+  },
+  {
+    "sessionNumber": 3,
+    "name": "Product Naming & Ingredient Labeling",
+    "roomName": "Right Ballroom",
+    "speaker": "Jesse Waller, Smithfield-Farmland     Justin Crews, Pinnacle Foods  USDA-FSIS-LPDS staff",
+    "description": "Explore USDA & FDA regulations on product naming & ingredients labeling.  Find out the difference between common, usual, descriptive, standard & fanciful names and what conventions are required for each.  Learn about the components of identity statements including many types of qualifiers. Discover the intricacies of declaring ingredients, including choosing a composite ingredient listing.",
+    "maxCapacity": 45,
+    "users": []
+  },
+  {
+    "sessionNumber": 5,
+    "name": "Product Naming & Ingredient Labeling",
+    "roomName": "Middle Ballroom",
+    "speaker": "Jesse Waller, Smithfield-Farmland     Justin Crews, Pinnacle Foods  USDA-FSIS-LPDS staff",
+    "description": "Explore USDA & FDA regulations on product naming & ingredients labeling.  Find out the difference between common, usual, descriptive, standard & fanciful names and what conventions are required for each.  Learn about the components of identity statements including many types of qualifiers. Discover the intricacies of declaring ingredients, including choosing a composite ingredient listing.",
+    "maxCapacity": 45,
+    "users": []
+  },
+
+
+
+  {
+    "sessionNumber": 1,
+    "name": "Allergen / Gluten Free Labeling",
+    "roomName": "Delegate Room",
+    "speaker": "Penny Hennessey, Rich Products",
+    "description": "Discover the different requirements of the USDA and FDA for labeling allergens, the major source of recalls in the United States.  Learn when allergens need to be declared and when they don’t, including the subtleties of containing statements.  Dive into the regulations on gluten free labeling and some considerations of its pros and cons.",
+    "maxCapacity": 35,
+    "users": []
+  },
+  {
+    "sessionNumber": 3,
+    "name": "Allergen / Gluten Free Labeling",
+    "roomName": "Delegate Room",
+    "speaker": "Penny Hennessey, Rich Products",
+    "description": "Discover the different requirements of the USDA and FDA for labeling allergens, the major source of recalls in the United States.  Learn when allergens need to be declared and when they don’t, including the subtleties of containing statements.  Dive into the regulations on gluten free labeling and some considerations of its pros and cons.",
+    "maxCapacity": 35,
+    "users": []
+  },
+
+
+
+
+  {
+    "sessionNumber": 1,
+    "name": "USDA Market Trends",
+    "roomName": "Wine Room",
+    "speaker": "Julie Leubbert, National Beef",
+    "description": "Discover the latest innovations in USDA labeling.  From animal welfare claims to genetically engineered ingredients, you will delve into the subtleties of new trends and  how to manage the dialog with USDA-FSIS regulators.",
+    "maxCapacity": 25,
+    "users": []
+  },
+  {
+    "sessionNumber": 4,
+    "name": "USDA Market Trends",
+    "roomName": "Wine Room",
+    "speaker": "Julie Leubbert, National Beef",
+    "description": "Discover the latest innovations in USDA labeling.  From animal welfare claims to genetically engineered ingredients, you will delve into the subtleties of new trends and  how to manage the dialog with USDA-FSIS regulators.",
+    "maxCapacity": 25,
+    "users": []
+  },
+
+
+
+
+  {
+    "sessionNumber": 1,
+    "name": "Food Service Labeling/ Sample Product Regulations",
+    "roomName": "Pres 1",
+    "speaker": "TBD",
+    "description": "What are the differences between Food Service and retail?  If your company sends samples to customers or trade shows – what are the labeling requirements?  Dive into the different requirements for exterior and interior product labeling, best practices for claims and the labeling of experimental products.",
+    "maxCapacity": 18,
+    "users": []
+  },
+  {
+    "sessionNumber": 3,
+    "name": "Food Service Labeling/ Sample Product Regulations",
+    "roomName": "Pres 1",
+    "speaker": "TBD",
+    "description": "What are the differences between Food Service and retail?  If your company sends samples to customers or trade shows – what are the labeling requirements?  Dive into the different requirements for exterior and interior product labeling, best practices for claims and the labeling of experimental products.",
+    "maxCapacity": 18,
+    "users": []
+  },
+
+
+
+  {
+    "sessionNumber": 1,
+    "name": "Nutrient/Health Claims",
+    "roomName": "Boardroom 1",
+    "speaker": "Fred Mosher, Prime Label Consultants",
+    "description": "Understand the FDA and USDA requirements for this very well defined set of claims. Dive into expressed versus implied claims, such as Lean, Low Fat, Sodium, and Omega claims, amongst others.  Explore relative claims and the “Healthy” claim, as well as FDA’s three types of Health claims.  Examine Front of Package nutrient claims and the subtleties of their different requirements.",
+    "maxCapacity": 18,
+    "users": []
+  },
+  {
+    "sessionNumber": 3,
+    "name": "Nutrient/Health Claims",
+    "roomName": "Left Ballroom",
+    "speaker": "Fred Mosher, Prime Label Consultants",
+    "description": "Understand the FDA and USDA requirements for this very well defined set of claims. Dive into expressed versus implied claims, such as Lean, Low Fat, Sodium, and Omega claims, amongst others.  Explore relative claims and the “Healthy” claim, as well as FDA’s three types of Health claims.  Examine Front of Package nutrient claims and the subtleties of their different requirements.",
+    "maxCapacity": 45,
+    "users": []
+  },
+  {
+    "sessionNumber": 7,
+    "name": "Nutrient/Health Claims",
+    "roomName": "Middle Ballroom",
+    "speaker": "Fred Mosher, Prime Label Consultants",
+    "description": "Understand the FDA and USDA requirements for this very well defined set of claims. Dive into expressed versus implied claims, such as Lean, Low Fat, Sodium, and Omega claims, amongst others.  Explore relative claims and the “Healthy” claim, as well as FDA’s three types of Health claims.  Examine Front of Package nutrient claims and the subtleties of their different requirements.",
+    "maxCapacity": 45,
+    "users": []
+  },
+
+
+
+  {
+    "sessionNumber": 1,
+    "name": "Food Safety, Quality & Traceability",
+    "roomName": "Pres 2",
+    "speaker": "Rob Elder, Seaboard Farms",
+    "description": "In this round table workshop, you will discuss best practices to insure the safety of your products.  Explore HACCP quality programs, support programs, reasons for recalls, and strategies for traceability.",
+    "maxCapacity": 18,
+    "users": []
+  },
+  {
+    "sessionNumber": 6,
+    "name": "Food Safety, Quality & Traceability",
+    "roomName": "Pres 2",
+    "speaker": "Rob Elder, Seaboard Farms",
+    "description": "In this round table workshop, you will discuss best practices to insure the safety of your products.  Explore HACCP quality programs, support programs, reasons for recalls, and strategies for traceability.",
+    "maxCapacity": 18,
+    "users": []
+  },
+
+
+
+  {
+    "sessionNumber": 2,
+    "name": "GMO Labeling",
+    "roomName": "Left Ballroom",
+    "speaker": "Dorothy Clemmer, Maple Leaf Foods",
+    "description": "GMO labeling is one of the fastest progressing and most controversial trends in labeling.  Explore the latest developments in this area, discover the difference between GMO and GEI, and discuss how the different regulatory jurisdictions of the USDA and FDA impact this labeling.",
+    "maxCapacity": 45,
+    "users": []
+  },
+  {
+    "sessionNumber": 4,
+    "name": "GMO Labeling",
+    "roomName": "Left Ballroom",
+    "speaker": "Dorothy Clemmer, Maple Leaf Foods",
+    "description": "GMO labeling is one of the fastest progressing and most controversial trends in labeling.  Explore the latest developments in this area, discover the difference between GMO and GEI, and discuss how the different regulatory jurisdictions of the USDA and FDA impact this labeling.",
+    "maxCapacity": 45,
+    "users": []
+  },
+
+
+
+
+
+  {
+    "sessionNumber": 2,
+    "name": "FDA Market Trends",
+    "roomName": "Delegate Room",
+    "speaker": "Penny Hennessey, Rich Products",
+    "description": "Take a peek at the latest FDA labeling trends arriving on shelves. Distinguish those that are “bleeding edge” from those that are “leading edge”, and understand the subtleties of compliance and enforcement of FDA regulations.",
+    "maxCapacity": 35,
+    "users": []
+  },
+  {
+    "sessionNumber": 4,
+    "name": "FDA Market Trends",
+    "roomName": "Delegate Room",
+    "speaker": "Penny Hennessey, Rich Products",
+    "description": "Take a peek at the latest FDA labeling trends arriving on shelves. Distinguish those that are “bleeding edge” from those that are “leading edge”, and understand the subtleties of compliance and enforcement of FDA regulations.",
+    "maxCapacity": 35,
+    "users": []
+  },
+
+
+  {
+    "sessionNumber": 2,
+    "name": "Organic, Animal Production & Grading Claims",
+    "roomName": "Wine Room",
+    "speaker": "Josh Peters, Organic Valley & Kristin Goodwin, USDA-FSIS-LPDS",
+    "description": "Discover the requirements for four different levels of organic claims, their documentation requirements and allowable organic logos.  Discuss the complexity of Animal Production and Breed Raising claims such as Cage-Free Poultry, Free-Range, No Added Hormones or Antibiotics, Humanely Raised, Certified Angus and others.  Find out the latest in USDA grading claims.",
+    "maxCapacity": 25,
+    "users": []
+  },
+  {
+    "sessionNumber": 5,
+    "name": "Organic, Animal Production & Grading Claims",
+    "roomName": "Wine Room",
+    "speaker": "Josh Peters, Organic Valley & Kristin Goodwin, USDA-FSIS-LPDS",
+    "description": "Discover the requirements for four different levels of organic claims, their documentation requirements and allowable organic logos.  Discuss the complexity of Animal Production and Breed Raising claims such as Cage-Free Poultry, Free-Range, No Added Hormones or Antibiotics, Humanely Raised, Certified Angus and others.  Find out the latest in USDA grading claims.",
+    "maxCapacity": 25,
+    "users": []
+  },
+
+
+  {
+    "sessionNumber": 2,
+    "name": "EZ Form Software (Beginner)",
+    "roomName": "Pres 1",
+    "speaker": "Fred Mosher, Prime Label Consultants",
+    "description": "New to EZ Form? Discover how this powerful software can streamline your labeling process by providing required forms, labels and camera-ready Nutrition Facts Panels.",
+    "maxCapacity": 18,
+    "users": []
+  },
+  {
+    "sessionNumber": 6,
+    "name": "EZ Form Software (Beginner)",
+    "roomName": "Pres 1",
+    "speaker": "Fred Mosher, Prime Label Consultants",
+    "description": "New to EZ Form? Discover how this powerful software can streamline your labeling process by providing required forms, labels and camera-ready Nutrition Facts Panels.",
+    "maxCapacity": 18,
+    "users": []
+  },
+
+
+
+
+  {
+    "sessionNumber": 2,
+    "name": "Canadian vs. US Labeling",
+    "roomName": "Pres 2",
+    "speaker": "Robert DeValk, DeValk Consulting",
+    "description": "Learn the basics of labeling requirements for Canada, including standardized products, nutrition labeling and bilingual labeling.  Discuss the subtleties of formulating products for Canada and some of the special issues that apply.  Understand what sources are available to help and what documentation is required for Canada.",
+    "maxCapacity": 18,
+    "users": []
+  },
+  {
+    "sessionNumber": 3,
+    "name": "Canadian vs. US Labeling",
+    "roomName": "Pres 2",
+    "speaker": "Robert DeValk, DeValk Consulting",
+    "description": "Learn the basics of labeling requirements for Canada, including standardized products, nutrition labeling and bilingual labeling.  Discuss the subtleties of formulating products for Canada and some of the special issues that apply.  Understand what sources are available to help and what documentation is required for Canada.",
+    "maxCapacity": 18,
+    "users": []
+  },
+  {
+    "sessionNumber": 4,
+    "name": "Canadian vs. US Labeling",
+    "roomName": "Pres 2",
+    "speaker": "Robert DeValk, DeValk Consulting",
+    "description": "Learn the basics of labeling requirements for Canada, including standardized products, nutrition labeling and bilingual labeling.  Discuss the subtleties of formulating products for Canada and some of the special issues that apply.  Understand what sources are available to help and what documentation is required for Canada.",
+    "maxCapacity": 18,
+    "users": []
+  },
+  {
+    "sessionNumber": 5,
+    "name": "Canadian vs. US Labeling",
+    "roomName": "Pres 2",
+    "speaker": "Robert DeValk, DeValk Consulting",
+    "description": "Learn the basics of labeling requirements for Canada, including standardized products, nutrition labeling and bilingual labeling.  Discuss the subtleties of formulating products for Canada and some of the special issues that apply.  Understand what sources are available to help and what documentation is required for Canada.",
+    "maxCapacity": 18,
+    "users": []
+  },
+
+
+
+
+  {
+    "sessionNumber": 2,
+    "name": "USDA Labeling Q&A's",
+    "roomName": "Boardroom 1",
+    "speaker": "Celia Yau, Prime Label Consultants    Jill Konecnik, John Morrell  USDA-FSIS-LPDS staff",
+    "description": "Explore the ins and outs of USDA labeling - such as product names & qualifiers; undefined RACC and nutrient claims; negative, uncured, organic and natural claims...  Bring your specific questions on the subtleties of labeling to our industry and PLC experts.",
+    "maxCapacity": 18,
+    "users": []
+  },
+  {
+    "sessionNumber": 3,
+    "name": "USDA Labeling Q&A's",
+    "roomName": "Boardroom 1",
+    "speaker": "Celia Yau, Prime Label Consultants    Jill Konecnik, John Morrell  USDA-FSIS-LPDS staff",
+    "description": "Explore the ins and outs of USDA labeling - such as product names & qualifiers; undefined RACC and nutrient claims; negative, uncured, organic and natural claims...  Bring your specific questions on the subtleties of labeling to our industry and PLC experts.",
+    "maxCapacity": 18,
+    "users": []
+  },
+  {
+    "sessionNumber": 5,
+    "name": "USDA Labeling Q&A's",
+    "roomName": "Left Ballroom",
+    "speaker": "Celia Yau, Prime Label Consultants    Jill Konecnik, John Morrell  USDA-FSIS-LPDS staff",
+    "description": "Explore the ins and outs of USDA labeling - such as product names & qualifiers; undefined RACC and nutrient claims; negative, uncured, organic and natural claims...  Bring your specific questions on the subtleties of labeling to our industry and PLC experts.",
+    "maxCapacity": 45,
+    "users": []
+  },
+  {
+    "sessionNumber": 6,
+    "name": "USDA Labeling Q&A's",
+    "roomName": "Boardroom 1",
+    "speaker": "Celia Yau, Prime Label Consultants    Jill Konecnik, John Morrell  USDA-FSIS-LPDS staff",
+    "description": "Explore the ins and outs of USDA labeling - such as product names & qualifiers; undefined RACC and nutrient claims; negative, uncured, organic and natural claims...  Bring your specific questions on the subtleties of labeling to our industry and PLC experts.",
+    "maxCapacity": 18,
+    "users": []
+  },
+  {
+    "sessionNumber": 7,
+    "name": "USDA Labeling Q&A's",
+    "roomName": "Boardroom 1",
+    "speaker": "Celia Yau, Prime Label Consultants    Jill Konecnik, John Morrell  USDA-FSIS-LPDS staff",
+    "description": "Explore the ins and outs of USDA labeling - such as product names & qualifiers; undefined RACC and nutrient claims; negative, uncured, organic and natural claims...  Bring your specific questions on the subtleties of labeling to our industry and PLC experts.",
+    "maxCapacity": 18,
+    "users": []
+  },
+
+
+
+
+  {
+    "sessionNumber": 2,
+    "name": "Nutrient Data: Lab vs. Calculation",
+    "roomName": "Boardroom 2",
+    "speaker": "Amy Hiller, Eddy Packing",
+    "description": "Explore the integrity of the Nutrition Panel by understanding the differences between calculated and analytical methods of producing nutrient data.  Discuss the various sources of nutrient data, different classes of ingredients, and issues of nutrient variability.",
+    "maxCapacity": 18,
+    "users": []
+  },
+  {
+    "sessionNumber": 4,
+    "name": "Nutrient Data: Lab vs. Calculation",
+    "roomName": "Boardroom 2",
+    "speaker": "Amy Hiller, Eddy Packing",
+    "description": "Explore the integrity of the Nutrition Panel by understanding the differences between calculated and analytical methods of producing nutrient data.  Discuss the various sources of nutrient data, different classes of ingredients, and issues of nutrient variability.",
+    "maxCapacity": 18,
+    "users": []
+  },
+
+
+  {
+    "sessionNumber": 3,
+    "name": "Clean Labeling",
+    "roomName": "Middle Ballroom",
+    "speaker": "Curtis Rach, JRS",
+    "description": "Discover best practices in clean labeling.  This workshop will explore how to clean up your labels and what makes a label “clean”.  These questions will be explored from an ingredient perspective.",
+    "maxCapacity": 45,
+    "users": []
+  },
+  {
+    "sessionNumber": 4,
+    "name": "Clean Labeling",
+    "roomName": "Middle Ballroom",
+    "speaker": "Curtis Rach, JRS",
+    "description": "Discover best practices in clean labeling.  This workshop will explore how to clean up your labels and what makes a label “clean”.  These questions will be explored from an ingredient perspective.",
+    "maxCapacity": 45,
+    "users": []
+  },
+
+
+
+
+    {
+    "sessionNumber": 3,
+    "name": "FDA Labeling Q&A's",
+    "roomName": "Wine Room",
+    "speaker": "Betty Campbell, EAS Consulting",
+    "description": "Find out the answers to those nagging questions about your FDA labels.  From product naming to claims and allergens, your specific questions will be answered. Led by a former FDA regulator and senior FDA consultant.",
+    "maxCapacity": 25,
+    "users": []
+  },
+  {
+    "sessionNumber": 5,
+    "name": "FDA Labeling Q&A's",
+    "roomName": "Boardroom 1",
+    "speaker": "Betty Campbell, EAS Consulting",
+    "description": "Find out the answers to those nagging questions about your FDA labels.  From product naming to claims and allergens, your specific questions will be answered. Led by a former FDA regulator and senior FDA consultant.",
+    "maxCapacity": 18,
+    "users": []
+  },
+  {
+    "sessionNumber": 6,
+    "name": "FDA Labeling Q&A's",
+    "roomName": "Delegate Room",
+    "speaker": "Betty Campbell, EAS Consulting",
+    "description": "Find out the answers to those nagging questions about your FDA labels.  From product naming to claims and allergens, your specific questions will be answered. Led by a former FDA regulator and senior FDA consultant.",
+    "maxCapacity": 35,
+    "users": []
+  },
+  {
+    "sessionNumber": 7,
+    "name": "FDA Labeling Q&A's",
+    "roomName": "Delegate Room",
+    "speaker": "Betty Campbell, EAS Consulting",
+    "description": "Find out the answers to those nagging questions about your FDA labels.  From product naming to claims and allergens, your specific questions will be answered. Led by a former FDA regulator and senior FDA consultant.",
+    "maxCapacity": 35,
+    "users": []
+  },
+
+
+
+
+  {
+    "sessionNumber": 3,
+    "name": "Expanding Regulatory for Driving Innovation",
+    "roomName": "Boardroom 2",
+    "speaker": "Lisa Weller, Oberto Sausage",
+    "description": "This workshop will explore how the Regulatory Department can initiate and lead an interdepartmental process to drive product & claims development.  Through real world examples and lively discussion, participants will brainstorm and share best practices to up-level the role of Regulatory into a strategic asset in your company.",
+    "maxCapacity": 18,
+    "users": []
+  },
+  {
+    "sessionNumber": 6,
+    "name": "Expanding Regulatory for Driving Innovation",
+    "roomName": "Boardroom 2",
+    "speaker": "Lisa Weller, Oberto Sausage",
+    "description": "This workshop will explore how the Regulatory Department can initiate and lead an interdepartmental process to drive product & claims development.  Through real world examples and lively discussion, participants will brainstorm and share best practices to up-level the role of Regulatory into a strategic asset in your company.",
+    "maxCapacity": 18,
+    "users": []
+  },
+
+
+  {
+    "sessionNumber": 4,
+    "name": "EZ Form Software (Advanced)",
+    "roomName": "Pres 1",
+    "speaker": "Fred Mosher, Prime Label Consultants",
+    "description": "Now that you have mastered the basics of EZ Form, learn about its other powerful compliance tools.  These will include the calculators for Organic, Generic, Nutrient Claims, Child Nutrition, ADA Exchange and Country of Origin.  We will also review the Proposed NFP Change Report and the Spec Sheet Builder.",
+    "maxCapacity": 18,
+    "users": []
+  },
+
+
+
+  {
+    "sessionNumber": 5,
+    "name": "Generic Labeling Update",
+    "roomName": "Right Ballroom",
+    "speaker": "Jesse Waller, Smithfield-Farmland, Dr. Dan Engeljohn & Dr. Rosemary Earley, USDA-FSIS",
+    "description": "Now that the expanded generic rule is one year old, find out the latest in requirements and best practices.  Explore generic eligibility and compliance, and discuss enforcement subtleties with your local inspector.  Understand what you need to do to keep thorough records and discuss strategies to reduce risk.",
+    "maxCapacity": 45,
+    "users": []
+  },
+  {
+    "sessionNumber": 6,
+    "name": "Generic Labeling Update",
+    "roomName": "Right Ballroom",
+    "speaker": "Jesse Waller, Smithfield-Farmland, Dr. Dan Engeljohn & Dr. Rosemary Earley, USDA-FSIS",
+    "description": "Now that the expanded generic rule is one year old, find out the latest in requirements and best practices.  Explore generic eligibility and compliance, and discuss enforcement subtleties with your local inspector.  Understand what you need to do to keep thorough records and discuss strategies to reduce risk.",
+    "maxCapacity": 45,
+    "users": []
+  },
+  {
+    "sessionNumber": 7,
+    "name": "Generic Labeling Update",
+    "roomName": "Right Ballroom",
+    "speaker": "Jesse Waller, Smithfield-Farmland, Dr. Dan Engeljohn & Dr. Rosemary Earley, USDA-FSIS",
+    "description": "Now that the expanded generic rule is one year old, find out the latest in requirements and best practices.  Explore generic eligibility and compliance, and discuss enforcement subtleties with your local inspector.  Understand what you need to do to keep thorough records and discuss strategies to reduce risk.",
+    "maxCapacity": 45,
+    "users": []
+  },
+
+
+
+  {
+    "sessionNumber": 5,
+    "name": "Certified/Verified Claims",
+    "roomName": "Delegate Room",
+    "speaker": "Rob Elder, Seaboard Foods & Jeff Waite, USDA-AMS, Tammie Ballard, USDA-FSIS-LPDS",
+    "description": "Explore the intricacies of Certified/Verified Claims, including the certification process, documentation, types of claims and the subtleties of this labeling.",
+    "maxCapacity": 35,
+    "users": []
+  },
+
+
+
+  {
+    "sessionNumber": 5,
+    "name": "Flavor Labeling",
+    "roomName": "Pres 1",
+    "speaker": "Janice Howard, Southeastern Mills and Tawana Harrington, USDA-FSIS-LPDS",
+    "description": "How you label a flavor depends upon which labeling jurisdiction applies.  Learn the ins and outs of this intricate subject and the differences between USDA and FDA flavor labeling.",
+    "maxCapacity": 18,
+    "users": []
+  },
+  {
+    "sessionNumber": 7,
+    "name": "Flavor Labeling",
+    "roomName": "Pres 1",
+    "speaker": "Janice Howard, Southeastern Mills and Tawana Harrington, USDA-FSIS-LPDS",
+    "description": "How you label a flavor depends upon which labeling jurisdiction applies.  Learn the ins and outs of this intricate subject and the differences between USDA and FDA flavor labeling.",
+    "maxCapacity": 18,
+    "users": []
+  },
+
+
+
+  {
+    "sessionNumber": 6,
+    "name": "Export to China, Mexico (Cuba…?)",
+    "roomName": "Left Ballroom",
+    "speaker": "Dr. Dan Engeljohn, Assistant Administrator USDA",
+    "description": "Discover what you need to export product to three of the most interesting markets in the world: China, Mexico and Cuba.  Delve into the intricacies of labeling, customs requirements, and other important factors.",
+    "maxCapacity": 45,
+    "users": []
+  },
+  {
+    "sessionNumber": 7,
+    "name": "Export to China, Mexico (Cuba…?)",
+    "roomName": "Left Ballroom",
+    "speaker": "Dr. Dan Engeljohn, Assistant Administrator USDA",
+    "description": "Discover what you need to export product to three of the most interesting markets in the world: China, Mexico and Cuba.  Delve into the intricacies of labeling, customs requirements, and other important factors.",
+    "maxCapacity": 45,
+    "users": []
+  },
+
+
+  {
+    "sessionNumber": 6,
+    "name": "School Lunch (CN) Labeling",
+    "roomName": "Wine Room",
+    "speaker": "Staff of USDA-AMS CN group",
+    "description": "Discover the ins and outs of Child Nutrition labeling from the administrators themselves.  Explore how CN labeling works and its advantages.  Step through a CN label application and discuss whole grain rich criteria.  Finally, find out where to obtain information and discuss some frequently asked questions.",
+    "maxCapacity": 25,
+    "users": []
+  },
+  {
+    "sessionNumber": 7,
+    "name": "School Lunch (CN) Labeling",
+    "roomName": "Wine Room",
+    "speaker": "Staff of USDA-AMS CN group",
+    "description": "Discover the ins and outs of Child Nutrition labeling from the administrators themselves.  Explore how CN labeling works and its advantages.  Step through a CN label application and discuss whole grain rich criteria.  Finally, find out where to obtain information and discuss some frequently asked questions.",
+    "maxCapacity": 25,
     "users": []
   }
 ]

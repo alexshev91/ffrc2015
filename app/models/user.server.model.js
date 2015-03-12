@@ -49,7 +49,16 @@ var UserSchema = new Schema({
 		match: [/.+\@.+\..+/, 'Please fill a valid email address']
 	},
 	sessions: {
-		type: Array
+		type: Schema.Types.Mixed,
+		default: {
+			sessionOne: 'Not Signed Up',
+			sessionTwo: 'Not Signed Up',
+			sessionThree: 'Not Signed Up',
+			sessionFour: 'Not Signed Up',
+			sessionFive: 'Not Signed Up',
+			sessionSix: 'Not Signed Up',
+			sessionSeven: 'Not Signed Up'
+		}
 	}
 	// username: {
 	// 	type: String,

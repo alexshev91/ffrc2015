@@ -1,0 +1,70 @@
+<!-- <section data-ng-controller="BreakoutsController" data-ng-init="getBreakoutsForAdminGrid()">
+    <div class="page-header">
+        <h1>Breakouts</h1>
+    </div>
+    <div class="list-group">
+        <a data-ng-repeat="breakout in breakouts" data-ng-href="#!/breakouts/{{breakout._id}}" class="list-group-item">
+      <small class="list-group-item-text">
+        Posted on
+        <span data-ng-bind="breakout.created | date:'medium'"></span>
+        by
+        <span data-ng-bind="breakout.user.displayName"></span>
+      </small>
+      <h4 class="list-group-item-heading" data-ng-bind="breakout.name"></h4>
+        </a>
+    </div>
+    <div class="alert alert-warning text-center" data-ng-hide="!breakouts.$resolved || breakouts.length">
+      No Breakouts yet, why don't you <a href="/#!/breakouts/create">create one</a>?
+    </div>
+</section> -->
+
+
+
+<style type="text/css">
+  .form-control {
+    width: 400px;
+  }
+
+  hr {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #EEEEEE -moz-use-text-color #FFFFFF;
+    border-style: solid none;
+    border-width: 1px 0;
+    margin: 18px 0;
+  }
+
+  .gridStyle {
+      border: 1px solid rgb(212,212,212);
+      width: 1100px;
+      height: 750px
+  }
+</style>
+
+<section data-ng-controller="BreakoutsController" data-ng-init="getBreakoutsForAdminGrid()">
+
+
+  <div class="container">
+    <div class="row">
+      <div class="row">
+        <div class="col-md-12">
+
+        </div>
+      </div>
+      <div class="col-md-12">
+        <h3>Breakouts with currently signed up/maximum capacity</h3>
+          <div class="gridStyle" ui-grid="gridOptions">
+            </div>
+            <div class="col-md-12">
+              <button class="btn btn-primary btn-large">Submit Changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
