@@ -1,8 +1,8 @@
 'use strict';
 
 // Breakouts controller
-angular.module('breakouts').controller('BreakoutsController', ['$scope', '$http', '$stateParams', '$location', 'Authentication', 'Breakouts',
-	function($scope, $http, $stateParams, $location, Authentication, Breakouts) {
+angular.module('breakouts').controller('BreakoutsController', ['$scope', '$http', '$stateParams', '$window','$location', 'Authentication', 'Breakouts',
+	function($scope, $http, $stateParams, $window, $location, Authentication, Breakouts) {
 		$scope.authentication = Authentication;
 
 		// Create new Breakout
@@ -40,6 +40,13 @@ angular.module('breakouts').controller('BreakoutsController', ['$scope', '$http'
 			}
 		};
 
+		$scope.goBackToBreakouts = function(){
+			$window.location.reload()
+			$location.path('/breakouts')
+		}
+
+
+
 		// Update existing Breakout
 		$scope.update = function() {
 			var breakout = $scope.breakout;
@@ -53,6 +60,10 @@ angular.module('breakouts').controller('BreakoutsController', ['$scope', '$http'
 
 		// Find a list of Breakouts by Session
 		$scope.find = function() {
+			if($scope.authentication.user.sessions.sessionOne.name != 'Not Signed Up' && $scope.authentication.user.sessions.sessionTwo.name != 'Not Signed Up' && $scope.authentication.user.sessions.sessionThree.name != 'Not Signed Up' && $scope.authentication.user.sessions.sessionFour.name != 'Not Signed Up' && $scope.authentication.user.sessions.sessionFive.name != 'Not Signed Up' && $scope.authentication.user.sessions.sessionSix.name != 'Not Signed Up' && $scope.authentication.user.sessions.sessionSeven.name != 'Not Signed Up'){
+				$location.path('schedule/users/' + $scope.authentication.user._id);
+			}
+
 
 		 	$http.post('/findBreakoutsBySession', {sessionNum : 1})
 		 		.success(function(data){
@@ -92,8 +103,8 @@ angular.module('breakouts').controller('BreakoutsController', ['$scope', '$http'
 		};
 
 
-		function addUserToSession(sessionID, sessnNumber, usrID,usrEmail){
-			$http.post('/addUserToSession', {sessID: sessionID, sessNumber: sessnNumber,userid: usrID,usremail: usrEmail})
+		function addUserToSession(sessionID, sessnNumber, sessnName, cmnt, usr){
+			$http.post('/addUserToSession', {sessID: sessionID, sessNumber: sessnNumber, sessName: sessnName, usrcmnt: cmnt, usertobeupdated: usr})
 			 		.success(function(data){
 			 			console.log("data after update is: "+JSON.stringify(data))
 			 	});
@@ -103,6 +114,7 @@ angular.module('breakouts').controller('BreakoutsController', ['$scope', '$http'
 
 		$scope.submitSchedule = function(){
 			var sessionsToBeUpdated = [];
+			console.log("inside breakouts.client.controller. scope.sessionone is: "+ JSON.stringify($scope.sessionform.sessionone))
 
 			if($scope.sessionform.sessionone){sessionsToBeUpdated.push($scope.sessionform.sessionone)};
 			if($scope.sessionform.sessiontwo){sessionsToBeUpdated.push($scope.sessionform.sessiontwo)};
@@ -112,13 +124,23 @@ angular.module('breakouts').controller('BreakoutsController', ['$scope', '$http'
 			if($scope.sessionform.sessionsix){sessionsToBeUpdated.push($scope.sessionform.sessionsix)};
 			if($scope.sessionform.sessionseven){sessionsToBeUpdated.push($scope.sessionform.sessionseven)};
 
-			var tobeupdateduser = $scope.authentication.user._id;
+			var tobeupdateduser = $scope.authentication.user;
 			var usersemail = $scope.authentication.user.email;
 
 			for(var i=0; i<sessionsToBeUpdated.length; i++){
-				addUserToSession(sessionsToBeUpdated[i]._id, sessionsToBeUpdated[i].sessionNumber,tobeupdateduser,usersemail);
+				var alreadyInSession = false;
+				for(var j=0; j<sessionsToBeUpdated[i].users.length; j++){
+					if(sessionsToBeUpdated[i].users[j].id === tobeupdateduser){
+						alreadyInSession = true;
+					}
+				}
+				if(alreadyInSession === false){
+					addUserToSession(sessionsToBeUpdated[i]._id, sessionsToBeUpdated[i].sessionNumber, sessionsToBeUpdated[i]["name"], sessionsToBeUpdated[i]["comment"], tobeupdateduser);
+				}
+
 			};
-			// console.log('finding selection for session one in database: '+ )
+
+			$location.path('schedule/users/' + tobeupdateduser._id);
 
 		};
 
@@ -130,6 +152,28 @@ angular.module('breakouts').controller('BreakoutsController', ['$scope', '$http'
 			});
 		};
 
+		$scope.getUsersForAdminGrid = function(){
+
+			$http.post('/getUsersForGrid',{}).success(function(data){
+				$scope.usersForGrid = data;
+			})
+		};
+
+		    $scope.usersGridOptions = {
+		        data: 'usersForGrid',
+		        columnDefs: [{field:'email', width: 200, displayName:'Email',cellTemplate:'<a href="mailto:{{COL_FIELD}}">{{COL_FIELD}}</a>'},
+		        				{field:'_id', displayName:'ID',cellTemplate:'<a href="#!/admin/users/{{COL_FIELD}}">{{COL_FIELD}}</a>'},
+		        				{field:'lastName', displayName:'Last Name'},
+		        				{field:'firstName', displayName:'First Name'},
+		        				{field:'sessions.sessionOne.name', displayName:'Session 1'},
+		        				{field:'sessions.sessionTwo.name', displayName:'Session 2'},
+		        				{field:'sessions.sessionThree.name', displayName:'Session 3'},
+		        				{field:'sessions.sessionFour.name', displayName:'Session 4'},
+		        				{field:'sessions.sessionFive.name', displayName:'Session 5'},
+		        				{field:'sessions.sessionSix.name', displayName:'Session 6'},
+		        				{field:'sessions.sessionSeven.name', displayName:'Session 7'}
+		        				]
+		    };
 
 
 		$scope.getBreakoutsForAdminGrid = function(){
@@ -289,6 +333,27 @@ $scope.toggleBreakoutUsers = function(breakoutusers){
         				{field:'sessSix', displayName:'Session 6'},
         				{field:'sessSeven', displayName:'Session 7'}]
     };
+
+
+$scope.findUserForAdmin=function(){
+	var searchparameter = $stateParams.uid;
+
+
+	$http.post('/findUserById', {uid: searchparameter})
+	.success(function(data){
+		// $scope.nameOfBreakout = colfield;
+		// console.log("nameofbreakout is: "+ $scope.nameOfBreakout)
+		$scope.userinfo = data[0];
+
+
+	});
+
+
+};
+
+
+
+
 
 
 	}

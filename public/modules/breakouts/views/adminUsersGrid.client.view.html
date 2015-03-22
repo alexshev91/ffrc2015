@@ -1,0 +1,53 @@
+<style type="text/css">
+  .form-control {
+    width: 400px;
+  }
+
+  hr {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #EEEEEE -moz-use-text-color #FFFFFF;
+    border-style: solid none;
+    border-width: 1px 0;
+    margin: 18px 0;
+  }
+
+  .gridStyle {
+      border: 1px solid rgb(212,212,212);
+      width: 1100px;
+      height: 1000px
+  }
+</style>
+
+
+
+
+<section data-ng-controller="BreakoutsController" data-ng-init="getUsersForAdminGrid()">
+<a class="btn btn-large btn-primary" href="/#!/admin/grid">Breakouts</a>
+
+  <div class="container">
+    <div class="row">
+      <div class="row">
+        <div class="col-md-12">
+
+        </div>
+      </div>
+      <div class="col-md-12">
+        <h3>Users Grid</h3>
+        <h5>Click on the email link to email a user</h5>
+        <h5>Clock on the ID link to go to a user's information page</h5>
+          <div class="gridStyle" ui-grid="usersGridOptions">
+            </div>
+            <div class="col-md-12">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>

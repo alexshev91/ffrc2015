@@ -78,32 +78,41 @@ exports.addUserToSession = function(req,res){
 	console.log('inside addUserToSession. req.body is: '+ JSON.stringify(req.body))
 	var sessionid = req.body.sessID;
 	var sessionnumber = req.body.sessNumber;
-	var usrid = req.body.userid;
-	var useremail= req.body.usremail;
+	var sessionname = req.body.sessName;
+
+	var usercomment = req.body.usrcmnt;
+
+	var usrid = req.body.usertobeupdated._id;
+	var useremail= req.body.usertobeupdated.email;
+	var usda = req.body.usertobeupdated.USDA;
+	var fda = req.body.usertobeupdated.FDA;
+	var firstname = req.body.usertobeupdated.firstName;
+	var lastname = req.body.usertobeupdated.lastName;
+
 
 	var updateQuery = {};
 
 	switch (sessionnumber) {
 	  case 1:
-	    updateQuery = {$set:{'sessions.sessionOne':sessionid}};
+	    updateQuery = {$set:{'sessions.sessionOne.sessionid':sessionid, 'sessions.sessionOne.name': sessionname, 'sessions.sessionOne.comment': usercomment}};
 	    break;
 	  case 2:
-	    updateQuery = {$set:{'sessions.sessionTwo':sessionid}};
+	    updateQuery = {$set:{'sessions.sessionTwo.sessionid':sessionid, 'sessions.sessionTwo.name': sessionname, 'sessions.sessionTwo.comment': usercomment}};
 	    break;
 	  case 3:
-	    updateQuery = {$set:{'sessions.sessionThree':sessionid}};
+	    updateQuery = {$set:{'sessions.sessionThree.sessionid':sessionid, 'sessions.sessionThree.name': sessionname, 'sessions.sessionThree.comment': usercomment}};
 	    break;
 	  case 4:
-	    updateQuery = {$set:{'sessions.sessionFour':sessionid}};
+	    updateQuery = {$set:{'sessions.sessionFour.sessionid':sessionid, 'sessions.sessionFour.name': sessionname, 'sessions.sessionFour.comment': usercomment}};
 	    break;
 	  case 5:
-	    updateQuery = {$set:{'sessions.sessionFive':sessionid}};
+	    updateQuery = {$set:{'sessions.sessionFive.sessionid':sessionid, 'sessions.sessionFive.name': sessionname, 'sessions.sessionFive.comment': usercomment}};
 	    break;
 	  case 6:
-	    updateQuery = {$set:{'sessions.sessionSix':sessionid}};
+	    updateQuery = {$set:{'sessions.sessionSix.sessionid':sessionid, 'sessions.sessionSix.name': sessionname, 'sessions.sessionSix.comment': usercomment}};
 	    break;
 	  case 7:
-	    updateQuery = {$set:{'sessions.sessionSeven':sessionid}};
+	    updateQuery = {$set:{'sessions.sessionSeven.sessionid':sessionid, 'sessions.sessionSeven.name': sessionname, 'sessions.sessionSeven.comment': usercomment}};
 	    break;
 	  default:
 	    console.log("Inside breakout.server.controller, addUserToSession method. Switch statement for sessionnumber has defaulted")
@@ -111,7 +120,7 @@ exports.addUserToSession = function(req,res){
 	};
 
 
-	Breakout.update({_id: sessionid},{$push:{"users":{"email": useremail, "id":usrid}}},function(err, doc) {
+	Breakout.update({_id: sessionid},{$push:{"users":{"email": useremail, "id":usrid, "comment": usercomment,"firstName": firstname, "lastName": lastname, "USDA": usda, "FDA": fda}}},function(err, doc) {
 		if (err || !doc) {
 			console.log("error updating breakout with user: " + err);
 		} else {
@@ -128,6 +137,31 @@ exports.addUserToSession = function(req,res){
 		};
 	});
 };
+
+
+
+
+exports.finduserbyid = function(req,res){
+	var searchid = req.body.uid;
+
+	User.find({"_id":searchid}, function(err, doc){
+    		if (err || !doc) {
+    			throw 'Error'
+    		} else {
+    			console.log("Breakout server controller. inside findusersofbreakout the document to be responded with is doc: " + JSON.stringify(doc));
+    			res.json(doc);
+    		}
+
+
+	});
+
+
+
+
+}
+
+
+
 
 
 
@@ -206,6 +240,18 @@ exports.list = function(req, res) {
 		}
 	});
 };
+
+exports.getusersforgrid = function(req, res){
+	User.find().exec(function(err, users){
+		if(err){
+			console.log('ERROR FINDING USERS FOR GRID')
+		} else{
+			res.json(users);
+		}
+	})
+}
+
+
 
 /**
  * Breakout middleware

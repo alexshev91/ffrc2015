@@ -43,13 +43,28 @@
 	<![endif]-->
 </head>
 
+
+
 <body class="ng-cloak">
-	<header data-ng-include="'/modules/core/views/header.client.view.html'" class="navbar navbar-fixed-top navbar-inverse"></header>
+	<header>
+		<div class="row text-center">
+			<img src="/modules/core/img/brand/header1-blue.png" alt="">
+		</div>
+	</header>
+
 	<section class="content">
 		<section class="container">
 			{% block content %}{% endblock %}
 		</section>
 	</section>
+
+
+<footer class="row">
+    <div class="footer text-center">
+		<p> <a href="http://www.primelabel.com">Prime Label Consultants</a>, Inc. (202) 546-3333</p>
+    </div>
+  </footer>
+
 
 	<!--Embedding The User Object-->
 	<script type="text/javascript">
@@ -57,7 +72,7 @@
 	</script>
 
 	<!--Application JavaScript Files-->
-	{% for jsFile in jsFiles %}<script type="text/javascript" src="{{jsFile}}"></script>{% endfor %} 
+	{% for jsFile in jsFiles %}<script type="text/javascript" src="{{jsFile}}"></script>{% endfor %}
 
 	{% if process.env.NODE_ENV === 'development' %}
 	<!--Livereload script rendered -->

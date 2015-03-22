@@ -17,9 +17,22 @@ angular.module('breakouts').config(['$stateProvider',
 			url: '/admin/grid',
 			templateUrl: 'modules/breakouts/views/adminGrid-breakout.client.view.html'
 		}).
+		state('usersGrid', {
+			url: '/admin/usersGrid',
+			templateUrl: 'modules/breakouts/views/adminUsersGrid.client.view.html'
+		}).
+		state('viewAdminUserById', {
+			url: '/admin/users/:uid',
+			templateUrl: 'modules/breakouts/views/adminUserView-breakout.client.view.html'
+		}).
+
 		state('viewAdminBreakoutsByName', {
 			url: '/admin/grid/breakouts/:breakoutname',
 			templateUrl: 'modules/breakouts/views/adminBreakoutsWithOneName-breakout.client.view.html'
+		}).
+		state('thanksForSigningUp', {
+			url: '/schedule/users/:uid',
+			templateUrl: 'modules/breakouts/views/thanksForSigningUp-breakouts.client.view.html'
 		}).
 		state('viewBreakout', {
 			url: '/breakouts/:breakoutId',

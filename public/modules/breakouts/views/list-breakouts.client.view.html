@@ -1,6 +1,42 @@
+<style type="text/css">
+    #attendance {
+        font-style: italic;
+    }
+/*    .attndnc{
+        float:left;
+    }*/
+    .form-actions {
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+}
+
+    .setcolor {
+        color: blue;
+    }
+
+    #thebutton {
+        margin-top:40px;
+        margin-bottom: 80px;
+    }
+
+    #cntrthebutton {
+        margin: 0 auto;
+        position: center;
+        width:400px;
+    }
+
+</style>
+
+
+
+
+
+
 <section data-ng-controller="BreakoutsController" data-ng-init="find()">
     <div class="page-header">
-        <h1>Breakouts</h1>
+        <h1>Breakout Session Schedule</h1>
+        <h4 class="setcolor">Welcome, {{authentication.user.firstName}} {{authentication.user.lastName}}! Please select your breakout session schedule below.</h4>
     </div>
 
 <form data-ng-submit="submitSchedule()" name='sessionform'>
@@ -8,23 +44,30 @@
 
 
 
-<div class='container'>
-    <h1>Session ONE</h1>
+<div class='container' data-ng-show="authentication.user.sessions.sessionOne.name === 'Not Signed Up'">
+    <h3>Session 1: Monday 11am-12pm</h3>
     <div class='list-group'>
         <label class="list-group-item col-md-6 odd" for="{{breakout}}" ng-repeat="breakout in sessOne">
             <div popover="{{breakout.description}}" popover-title='{{breakout.speaker}}' popover-trigger="mouseenter" popover-placement='bottom'>
                     <input id="{{breakout}}" type="radio"
-                    ng-model="sessionform.sessionone" data-ng-value="breakout">
+                    data-ng-model="sessionform.sessionone" data-ng-value="breakout">
                     {{breakout.name}}
              </div>
         </label>
     </div>
 </div>
+<div class="container">
+            <div ng-show="sessionform.sessionone">
+                <label for="textarea" class="setcolor">Submit your questions for {{sessionform.sessionone.name}}  session</label>
+                <textarea class="form-control" ng-model="sessionform.sessionone.comment" placeholder="Enter your questions">
+                </textarea>
+          </div>
+</div>
 
 
 
-<div class='container'>
-    <h1>Session TWO</h1>
+<div class='container' data-ng-show="authentication.user.sessions.sessionTwo.name === 'Not Signed Up'">
+    <h3>Session 2: Monday 1:10pm-2:10pm</h3>
     <div class='list-group'>
         <label class="list-group-item col-md-6 odd" for="{{breakout}}" ng-repeat="breakout in sessTwo">
             <div popover="{{breakout.description}}" popover-title='{{breakout.speaker}}' popover-trigger="mouseenter">
@@ -35,9 +78,16 @@
         </label>
     </div>
 </div>
+<div class="container">
+            <div ng-show="sessionform.sessiontwo">
+                <label for="textarea" class="setcolor">Submit your questions for {{sessionform.sessiontwo.name}}  session</label>
+                <textarea class="form-control" ng-model="sessionform.sessiontwo.comment" placeholder="Enter your questions">
+                </textarea>
+          </div>
+</div>
 
-<div class='container'>
-<h1>Session THREE</h1>
+<div class='container' data-ng-show="authentication.user.sessions.sessionThree.name === 'Not Signed Up'">
+<h3>Session 3: Monday 2:30pm-3:30pm</h3>
 <div class='list-group'>
     <label class="list-group-item col-md-6 odd" for="{{breakout}}" ng-repeat="breakout in sessThree">
         <div popover="{{breakout.description}}" popover-title='{{breakout.speaker}}' popover-trigger="mouseenter">
@@ -48,9 +98,17 @@
     </label>
 </div>
 </div>
+<div class="container">
+            <div ng-show="sessionform.sessionthree">
+                <label for="textarea" class="setcolor">Submit your questions for {{sessionform.sessionthree.name}}  session</label>
+                <textarea class="form-control" ng-model="sessionform.sessionthree.comment" placeholder="Enter your questions">
+                </textarea>
+          </div>
+</div>
 
-<div class='container'>
-    <h1>Session FOUR</h1>
+
+<div class='container' data-ng-show="authentication.user.sessions.sessionFour.name === 'Not Signed Up'">
+    <h3>Session 4: Monday 3:50pm-4:50pm</h3>
     <div class='list-group'>
         <label class="list-group-item col-md-6 odd" for="{{breakout}}" ng-repeat="breakout in sessFour">
             <div popover="{{breakout.description}}" popover-title='{{breakout.speaker}}' popover-trigger="mouseenter">
@@ -61,10 +119,18 @@
         </label>
     </div>
 </div>
+<div class="container">
+            <div ng-show="sessionform.sessionfour">
+                <label for="textarea" class="setcolor">Submit your questions for {{sessionform.sessionfour.name}}  session</label>
+                <textarea class="form-control" ng-model="sessionform.sessionfour.comment" placeholder="Enter your questions">
+                </textarea>
+          </div>
+</div>
 
 
-<div class='container'>
-    <h1>Session FIVE</h1>
+
+<div class='container' data-ng-show="authentication.user.sessions.sessionFive.name === 'Not Signed Up'">
+    <h3><div class="attndnc">Session 5: Tuesday 11am-12pm</div><h5 class="attndnc" id="attendance">(FSIS LPDS attendance)</h5></h3>
     <div class='list-group'>
         <label class="list-group-item col-md-6 odd" for="{{breakout}}" ng-repeat="breakout in sessFive">
             <div popover="{{breakout.description}}" popover-title='{{breakout.speaker}}' popover-trigger="mouseenter">
@@ -75,10 +141,17 @@
         </label>
     </div>
 </div>
+<div class="container">
+            <div ng-show="sessionform.sessionfive">
+                <label for="textarea" class="setcolor">Submit your questions for {{sessionform.sessionfive.name}}  session</label>
+                <textarea class="form-control" ng-model="sessionform.sessionfive.comment" placeholder="Enter your questions">
+                </textarea>
+          </div>
+</div>
 
 
-<div class='container'>
-    <h1>Session SIX</h1>
+<div class='container' data-ng-show="authentication.user.sessions.sessionSix.name === 'Not Signed Up'">
+    <h3>Session 6: Tuesday 1:10pm-2:10pm</h3>
     <div class='list-group'>
         <label class="list-group-item col-md-6 odd" for="{{breakout}}" ng-repeat="breakout in sessSix">
             <div popover="{{breakout.description}}" popover-title='{{breakout.speaker}}' popover-trigger="mouseenter">
@@ -89,10 +162,20 @@
         </label>
     </div>
 </div>
+<div class="container">
+            <div ng-show="sessionform.sessionsix">
+                <label for="textarea" class="setcolor">Submit your questions for {{sessionform.sessionsix.name}}  session</label>
+                <textarea class="form-control" ng-model="sessionform.sessionsix.comment" placeholder="Enter your questions">
+                </textarea>
+          </div>
+</div>
 
 
-<div class='container'>
-    <h1>Session SEVEN</h1>
+
+
+
+<div class='container' data-ng-show="authentication.user.sessions.sessionSeven.name === 'Not Signed Up'">
+    <h3>Session 7: Tuesday 2:30pm-3:30pm</h3>
     <div class='list-group'>
         <label class="list-group-item col-md-6 odd" for="{{breakout}}" ng-repeat="breakout in sessSeven">
             <div popover="{{breakout.description}}" popover-title='{{breakout.speaker}}' popover-trigger="mouseenter">
@@ -103,10 +186,24 @@
         </label>
     </div>
 </div>
+<div class="container">
+            <div ng-show="sessionform.sessionseven" >
+                <label for="textarea"class="setcolor">Submit your questions for {{sessionform.sessionseven.name}}  session</label>
+                <textarea class="form-control" ng-model="sessionform.sessionseven.comment" placeholder="Enter your questions">
+                </textarea>
+          </div>
+</div>
 
 
 
-<button type="submit" class="btn btn-danger btn-lg">Submit</button>
+    <div class="form-actions" id="thebutton">
+        <div id="cntrthebutton">
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Submit your schedule</button>
+        </div>
+    </div>
+
+
+
 
 </form>
 

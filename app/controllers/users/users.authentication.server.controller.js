@@ -9,13 +9,34 @@ var _ = require('lodash'),
 	passport = require('passport'),
 	User = mongoose.model('User');
 
+
+
+
+
+
+
+
+exports.finduserindb = function(req, res){
+	var emailaddress = req.body.email;
+	console.log("in finduserindb request.body is: "+JSON.stringify(req.body))
+	User.findOne({email: emailaddress}, function(err, user){
+		if(err){
+			console.log("error finding user in db")
+		} else {
+			console.log('found user in db' + JSON.stringify(user))
+			res.json(user)
+		}
+	})
+
+
+
+}
 /**
  * Signup
  */
 exports.signup = function(req, res) {
 	// For security measurement we remove the roles from the req.body object
 	delete req.body.roles;
-
 	// Init Variables
 	var user = new User(req.body);
 	var message = null;
@@ -24,7 +45,7 @@ exports.signup = function(req, res) {
 	user.provider = 'local';
 	user.displayName = user.firstName + ' ' + user.lastName;
 
-	// Then save the user 
+	// Then save the user
 	user.save(function(err) {
 		if (err) {
 			return res.status(400).send({

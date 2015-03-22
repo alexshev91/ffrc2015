@@ -25,7 +25,7 @@
     "sessionNumber": 1,
     "name": "Prepping for the New NFP",
     "roomName": "Middle Ballroom",
-    "speaker": "Justin Crews, Pinnacle Foods",
+    "speaker": "Justin Crews, Wellshire Farms",
     "description": "Soon, two final rules will be released by the FDA, forcing the largest change in nutrition labeling in 20 years.  Companies will need to decide to either re-label or reformulate their products.  Learn the specifics of the proposed rule (new formats, serving sizes, nutrients, vitamins & daily values) and what you can do to help your company prepare for this massive change.",
     "maxCapacity": 45,
     "users": []
@@ -34,7 +34,7 @@
     "sessionNumber": 2,
     "name": "Prepping for the New NFP",
     "roomName": "Middle Ballroom",
-    "speaker": "Justin Crews, Pinnacle Foods",
+    "speaker": "Justin Crews, Wellshire Farms",
     "description": "Soon, two final rules will be released by the FDA, forcing the largest change in nutrition labeling in 20 years.  Companies will need to decide to either re-label or reformulate their products.  Learn the specifics of the proposed rule (new formats, serving sizes, nutrients, vitamins & daily values) and what you can do to help your company prepare for this massive change.",
     "maxCapacity": 45,
     "users": []
@@ -43,7 +43,7 @@
     "sessionNumber": 4,
     "name": "Prepping for the New NFP",
     "roomName": "Right Ballroom",
-    "speaker": "Justin Crews, Pinnacle Foods",
+    "speaker": "Justin Crews, Wellshire Farms",
     "description": "Soon, two final rules will be released by the FDA, forcing the largest change in nutrition labeling in 20 years.  Companies will need to decide to either re-label or reformulate their products.  Learn the specifics of the proposed rule (new formats, serving sizes, nutrients, vitamins & daily values) and what you can do to help your company prepare for this massive change.",
     "maxCapacity": 45,
     "users": []
@@ -55,7 +55,7 @@
     "sessionNumber": 1,
     "name": "Product Naming & Ingredient Labeling",
     "roomName": "Right Ballroom",
-    "speaker": "Jesse Waller, Smithfield-Farmland     Justin Crews, Pinnacle Foods  USDA-FSIS-LPDS staff",
+    "speaker": "Jesse Waller, Smithfield-Farmland     Justin Crews, Wellshire Farms",
     "description": "Explore USDA & FDA regulations on product naming & ingredients labeling.  Find out the difference between common, usual, descriptive, standard & fanciful names and what conventions are required for each.  Learn about the components of identity statements including many types of qualifiers. Discover the intricacies of declaring ingredients, including choosing a composite ingredient listing.",
     "maxCapacity": 45,
     "users": []
@@ -64,7 +64,7 @@
     "sessionNumber": 2,
     "name": "Product Naming & Ingredient Labeling",
     "roomName": "Right Ballroom",
-    "speaker": "Jesse Waller, Smithfield-Farmland     Justin Crews, Pinnacle Foods  USDA-FSIS-LPDS staff",
+    "speaker": "Jesse Waller, Smithfield-Farmland     Justin Crews, Wellshire Farms",
     "description": "Explore USDA & FDA regulations on product naming & ingredients labeling.  Find out the difference between common, usual, descriptive, standard & fanciful names and what conventions are required for each.  Learn about the components of identity statements including many types of qualifiers. Discover the intricacies of declaring ingredients, including choosing a composite ingredient listing.",
     "maxCapacity": 45,
     "users": []
@@ -73,7 +73,7 @@
     "sessionNumber": 3,
     "name": "Product Naming & Ingredient Labeling",
     "roomName": "Right Ballroom",
-    "speaker": "Jesse Waller, Smithfield-Farmland     Justin Crews, Pinnacle Foods  USDA-FSIS-LPDS staff",
+    "speaker": "Jesse Waller, Smithfield-Farmland     Justin Crews, Wellshire Farms",
     "description": "Explore USDA & FDA regulations on product naming & ingredients labeling.  Find out the difference between common, usual, descriptive, standard & fanciful names and what conventions are required for each.  Learn about the components of identity statements including many types of qualifiers. Discover the intricacies of declaring ingredients, including choosing a composite ingredient listing.",
     "maxCapacity": 45,
     "users": []
@@ -82,7 +82,7 @@
     "sessionNumber": 5,
     "name": "Product Naming & Ingredient Labeling",
     "roomName": "Middle Ballroom",
-    "speaker": "Jesse Waller, Smithfield-Farmland     Justin Crews, Pinnacle Foods  USDA-FSIS-LPDS staff",
+    "speaker": "Jesse Waller, Smithfield-Farmland     Justin Crews, Wellshire Farms  USDA-FSIS-LPDS staff",
     "description": "Explore USDA & FDA regulations on product naming & ingredients labeling.  Find out the difference between common, usual, descriptive, standard & fanciful names and what conventions are required for each.  Learn about the components of identity statements including many types of qualifiers. Discover the intricacies of declaring ingredients, including choosing a composite ingredient listing.",
     "maxCapacity": 45,
     "users": []
@@ -135,10 +135,10 @@
 
 
   {
-    "sessionNumber": 1,
+    "sessionNumber": 7,
     "name": "Food Service Labeling/ Sample Product Regulations",
-    "roomName": "Pres 1",
-    "speaker": "TBD",
+    "roomName": "Pres 2",
+    "speaker": "Justin Crews, Wellshire Farms",
     "description": "What are the differences between Food Service and retail?  If your company sends samples to customers or trade shows – what are the labeling requirements?  Dive into the different requirements for exterior and interior product labeling, best practices for claims and the labeling of experimental products.",
     "maxCapacity": 18,
     "users": []
@@ -147,7 +147,7 @@
     "sessionNumber": 3,
     "name": "Food Service Labeling/ Sample Product Regulations",
     "roomName": "Pres 1",
-    "speaker": "TBD",
+    "speaker": "Justin Crews, Wellshire Farms",
     "description": "What are the differences between Food Service and retail?  If your company sends samples to customers or trade shows – what are the labeling requirements?  Dive into the different requirements for exterior and interior product labeling, best practices for claims and the labeling of experimental products.",
     "maxCapacity": 18,
     "users": []
@@ -158,7 +158,7 @@
   {
     "sessionNumber": 1,
     "name": "Nutrient/Health Claims",
-    "roomName": "Boardroom 1",
+    "roomName": "Pres 1",
     "speaker": "Fred Mosher, Prime Label Consultants",
     "description": "Understand the FDA and USDA requirements for this very well defined set of claims. Dive into expressed versus implied claims, such as Lean, Low Fat, Sodium, and Omega claims, amongst others.  Explore relative claims and the “Healthy” claim, as well as FDA’s three types of Health claims.  Examine Front of Package nutrient claims and the subtleties of their different requirements.",
     "maxCapacity": 18,
@@ -253,7 +253,7 @@
     "sessionNumber": 2,
     "name": "Organic, Animal Production & Grading Claims",
     "roomName": "Wine Room",
-    "speaker": "Josh Peters, Organic Valley & Kristin Goodwin, USDA-FSIS-LPDS",
+    "speaker": "Josh Peters, Organic Valley",
     "description": "Discover the requirements for four different levels of organic claims, their documentation requirements and allowable organic logos.  Discuss the complexity of Animal Production and Breed Raising claims such as Cage-Free Poultry, Free-Range, No Added Hormones or Antibiotics, Humanely Raised, Certified Angus and others.  Find out the latest in USDA grading claims.",
     "maxCapacity": 25,
     "users": []
@@ -335,7 +335,7 @@
     "sessionNumber": 2,
     "name": "USDA Labeling Q&A's",
     "roomName": "Boardroom 1",
-    "speaker": "Celia Yau, Prime Label Consultants    Jill Konecnik, John Morrell  USDA-FSIS-LPDS staff",
+    "speaker": "Celia Yau, Prime Label Consultants    Jill Konecnik, John Morrell",
     "description": "Explore the ins and outs of USDA labeling - such as product names & qualifiers; undefined RACC and nutrient claims; negative, uncured, organic and natural claims...  Bring your specific questions on the subtleties of labeling to our industry and PLC experts.",
     "maxCapacity": 18,
     "users": []
@@ -344,7 +344,7 @@
     "sessionNumber": 3,
     "name": "USDA Labeling Q&A's",
     "roomName": "Boardroom 1",
-    "speaker": "Celia Yau, Prime Label Consultants    Jill Konecnik, John Morrell  USDA-FSIS-LPDS staff",
+    "speaker": "Celia Yau, Prime Label Consultants    Jill Konecnik, John Morrell",
     "description": "Explore the ins and outs of USDA labeling - such as product names & qualifiers; undefined RACC and nutrient claims; negative, uncured, organic and natural claims...  Bring your specific questions on the subtleties of labeling to our industry and PLC experts.",
     "maxCapacity": 18,
     "users": []
@@ -362,7 +362,7 @@
     "sessionNumber": 6,
     "name": "USDA Labeling Q&A's",
     "roomName": "Boardroom 1",
-    "speaker": "Celia Yau, Prime Label Consultants    Jill Konecnik, John Morrell  USDA-FSIS-LPDS staff",
+    "speaker": "Celia Yau, Prime Label Consultants    Jill Konecnik, John Morrell",
     "description": "Explore the ins and outs of USDA labeling - such as product names & qualifiers; undefined RACC and nutrient claims; negative, uncured, organic and natural claims...  Bring your specific questions on the subtleties of labeling to our industry and PLC experts.",
     "maxCapacity": 18,
     "users": []
@@ -371,7 +371,7 @@
     "sessionNumber": 7,
     "name": "USDA Labeling Q&A's",
     "roomName": "Boardroom 1",
-    "speaker": "Celia Yau, Prime Label Consultants    Jill Konecnik, John Morrell  USDA-FSIS-LPDS staff",
+    "speaker": "Celia Yau, Prime Label Consultants    Jill Konecnik, John Morrell",
     "description": "Explore the ins and outs of USDA labeling - such as product names & qualifiers; undefined RACC and nutrient claims; negative, uncured, organic and natural claims...  Bring your specific questions on the subtleties of labeling to our industry and PLC experts.",
     "maxCapacity": 18,
     "users": []
@@ -507,7 +507,7 @@
     "sessionNumber": 6,
     "name": "Generic Labeling Update",
     "roomName": "Right Ballroom",
-    "speaker": "Jesse Waller, Smithfield-Farmland, Dr. Dan Engeljohn & Dr. Rosemary Earley, USDA-FSIS",
+    "speaker": "Jesse Waller, Smithfield-Farmland",
     "description": "Now that the expanded generic rule is one year old, find out the latest in requirements and best practices.  Explore generic eligibility and compliance, and discuss enforcement subtleties with your local inspector.  Understand what you need to do to keep thorough records and discuss strategies to reduce risk.",
     "maxCapacity": 45,
     "users": []
@@ -516,7 +516,7 @@
     "sessionNumber": 7,
     "name": "Generic Labeling Update",
     "roomName": "Right Ballroom",
-    "speaker": "Jesse Waller, Smithfield-Farmland, Dr. Dan Engeljohn & Dr. Rosemary Earley, USDA-FSIS",
+    "speaker": "Jesse Waller, Smithfield-Farmland",
     "description": "Now that the expanded generic rule is one year old, find out the latest in requirements and best practices.  Explore generic eligibility and compliance, and discuss enforcement subtleties with your local inspector.  Understand what you need to do to keep thorough records and discuss strategies to reduce risk.",
     "maxCapacity": 45,
     "users": []
@@ -549,7 +549,7 @@
     "sessionNumber": 7,
     "name": "Flavor Labeling",
     "roomName": "Pres 1",
-    "speaker": "Janice Howard, Southeastern Mills and Tawana Harrington, USDA-FSIS-LPDS",
+    "speaker": "Janice Howard, Southeastern Mills",
     "description": "How you label a flavor depends upon which labeling jurisdiction applies.  Learn the ins and outs of this intricate subject and the differences between USDA and FDA flavor labeling.",
     "maxCapacity": 18,
     "users": []

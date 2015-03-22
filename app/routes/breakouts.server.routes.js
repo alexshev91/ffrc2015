@@ -17,7 +17,10 @@ module.exports = function(app) {
 	app.route('/addUserToSession').post(breakouts.addUserToSession);
 	app.route('/findBreakoutsBySession').post(breakouts.findbysession);
 	app.route('/findBreakoutsByName').post(breakouts.findbyname);
+	app.route('/getUsersForGrid').post(breakouts.getusersforgrid);
 	app.route('/findUsersOfBreakout').post(breakouts.findusersofbreakout);
+	app.route('/findUserById').post(breakouts.finduserbyid);
+
 
 
 

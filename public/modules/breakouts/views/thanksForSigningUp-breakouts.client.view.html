@@ -1,0 +1,75 @@
+<style type="text/css">
+      #thebutton {
+        margin-top:40px;
+        margin-bottom: 20px;
+    }
+
+    #cntrthebutton {
+        margin: 0 auto;
+        position: center;
+        width:400px;
+    }
+</style>
+
+
+
+<section data-ng-controller="BreakoutsController" data-ng-init="findUserForAdmin()" style="margin-bottom:65px;">
+
+
+
+
+
+
+        <div class="container">
+          <h3 class="post-title">
+            Dear {{userinfo.firstName}},
+          </h3>
+              <p>
+                  Thank you for selecting your Breakout Schedule and Question submissions for the 27th Federal Food Regulatory Conference April 27-28, 2015.
+              </p>
+               <p><h4>You are confirmed for:</h4></p>
+                        <ul>
+                          <li ng-show="userinfo.sessions.sessionOne.name != 'Not Signed Up'">Session 1: {{userinfo.sessions.sessionOne.name}}</li>
+                          <li ng-show="userinfo.sessions.sessionTwo.name != 'Not Signed Up'">Session 2: {{userinfo.sessions.sessionTwo.name}}</li>
+                          <li ng-show="userinfo.sessions.sessionThree.name != 'Not Signed Up'">Session 3: {{userinfo.sessions.sessionThree.name}}</li>
+                          <li ng-show="userinfo.sessions.sessionFour.name != 'Not Signed Up'">Session 4: {{userinfo.sessions.sessionFour.name}}</li>
+                          <li ng-show="userinfo.sessions.sessionFive.name != 'Not Signed Up'">Session 5: {{userinfo.sessions.sessionFive.name}}</li>
+                          <li ng-show="userinfo.sessions.sessionSix.name != 'Not Signed Up'">Session 6: {{userinfo.sessions.sessionSix.name}}</li>
+                          <li ng-show="userinfo.sessions.sessionSeven.name != 'Not Signed Up'">Session 7: {{userinfo.sessions.sessionSeven.name}}</li>
+                        </ul>
+
+                 <p>
+                   Prime Label Consultants has secured preliminary commitments from USDA and AMS School Lunch staff to attend some of the breakout sessions if their schedule permits. </br>We have indicated those next to the relevant sessions.
+                 </p>
+                 <p>
+                   Because we have received overwhelming response to this year's conference, it is important that you reserve your hotel room as soon as possible:
+                 </p>
+                 <p align="center"><div>Embassy Suites - Rate Code: PL5 </br>
+                        1-800-EMBASSY</br>
+                        1250 22nd St NW, Washington DC</div>
+                  </p>
+                  <p>
+                        We are looking forward to you joining us for a vibrant, informative conference filled with exceptional networking opportunities. </br>
+                        If you have any questions, please contact <b>Pat Yingling at (202) 546-3333 or <a href="mailto:conference@primelabel.com"> conference@primelabel.com. </a></b>
+                  </p>
+                  <p></br>
+                        We look forward to seeing you in April!
+                  </p>
+                  <p>
+                    Sincerely,
+                  </p>
+                  <p>
+                  Prime Label Consultants Team
+                  </p>
+        </div>
+        <div id="thebutton" data-ng-show="userinfo.sessions.sessionOne.name === 'Not Signed Up' || userinfo.sessions.sessionTwo.name === 'Not Signed Up' || userinfo.sessions.sessionThree.name === 'Not Signed Up' || userinfo.sessions.sessionFour.name === 'Not Signed Up' || userinfo.sessions.sessionFive.name === 'Not Signed Up' || userinfo.sessions.sessionSix.name === 'Not Signed Up' || userinfo.sessions.sessionSeven.name === 'Not Signed Up'">
+            <div id="cntrthebutton">
+                <button class="btn btn-primary btn-lg btn-block" ng-click='goBackToBreakouts()'>Complete your schedule</button>
+            </div>
+        </div>
+
+
+        <a href="/auth/signout">Signout</a>
+
+
+</section>

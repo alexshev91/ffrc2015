@@ -37,10 +37,14 @@ var UserSchema = new Schema({
 		default: '',
 		validate: [validateLocalStrategyProperty, 'Please fill in your last name']
 	},
-	// displayName: {
-	// 	type: String,
-	// 	trim: true
-	// },
+	USDA: {
+		type: Boolean,
+		default: false
+	},
+	FDA: {
+		type: Boolean,
+		default: false
+	},
 	email: {
 		type: String,
 		trim: true,
@@ -51,13 +55,13 @@ var UserSchema = new Schema({
 	sessions: {
 		type: Schema.Types.Mixed,
 		default: {
-			sessionOne: 'Not Signed Up',
-			sessionTwo: 'Not Signed Up',
-			sessionThree: 'Not Signed Up',
-			sessionFour: 'Not Signed Up',
-			sessionFive: 'Not Signed Up',
-			sessionSix: 'Not Signed Up',
-			sessionSeven: 'Not Signed Up'
+			sessionOne: { name: 'Not Signed Up', sessionid: '', comment: ''},
+			sessionTwo: { name: 'Not Signed Up', sessionid: '', comment: ''},
+			sessionThree: {name: 'Not Signed Up', sessionid: '', comment: ''},
+			sessionFour: {name: 'Not Signed Up', sessionid: '', comment: ''},
+			sessionFive: {name: 'Not Signed Up', sessionid: '', comment: ''},
+			sessionSix: {name: 'Not Signed Up', sessionid: '', comment: ''},
+			sessionSeven: {name: 'Not Signed Up', sessionid: '', comment:''}
 		}
 	}
 	// username: {

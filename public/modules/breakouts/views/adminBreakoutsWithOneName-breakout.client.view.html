@@ -5,16 +5,19 @@
   </div>
 
 
+<h2>{{breakoutsByName[0].name}}</h2>
+
+
 <ul class='list-group'>
             <li class="list-group-item" for="{{breakout}}" ng-repeat="breakout in breakoutsByName">
+              <div style="width:1200px;">
+                <h3>Session {{breakout.sessionNumber}} {{breakout.users.length}}/{{breakout.maxCapacity}}</h3>
+              </div>
 
-            <h2>Session {{breakout.sessionNumber}}</h2>
-            {{breakout.name}}
-            <h3>Capacity: {{breakout.users.length}}/{{breakout.maxCapacity}}</h3>
 
-
-            <ul ng-repeat="user in breakout.users track by $index">
-                  <li>{{user.email}}</li>
+            <ul style="list-style-type: none;"ng-repeat="user in breakout.users track by $index">
+                  <li>  <a href="mailto:{{user.email}}"> {{user.firstName}} {{user.lastName}}</a> <b ng-show="user.USDA"> USDA</b>  <b ng-show="user.FDA"> FDA</b></li>
+                  <div style="margin: 0 auto;"><div style="margin-left: 50px"ng-show="user.comment"> {{user.comment}}</div></div>
             </ul>
 
 
