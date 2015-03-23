@@ -3,9 +3,13 @@
 .sass-cache/
 npm-debug.log
 node_modules/
-*.0
-*.ns
-*.lock
+
+data/db/ffrc2015-dev.0
+data/db/ffrc2015-dev.ns
+data/db/local.0
+data/db/local.ns
+data/db/mongod.lock
+
 public/lib
 app/tests/coverage/
 .bower-*/
