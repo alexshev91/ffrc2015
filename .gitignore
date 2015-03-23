@@ -4,11 +4,7 @@
 npm-debug.log
 node_modules/
 
-data/db/ffrc2015-dev.0
-data/db/ffrc2015-dev.ns
-data/db/local.0
-data/db/local.ns
-data/db/mongod.lock
+data/db/**
 
 public/lib
 app/tests/coverage/
