@@ -182,7 +182,6 @@ angular.module('breakouts').controller('BreakoutsController', ['$scope', '$http'
 									"Canadian vs. US Labeling",
 									"Certified/Verified Claims",
 									"Clean Labeling",
-									"Expanding Regulatory for Driving Innovation",
 									"Export to China, Mexico (Cuba…?)",
 									"EZ Form Software (Beginner)",
 									"EZ Form Software (Advanced)",
