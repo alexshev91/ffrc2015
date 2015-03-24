@@ -67,37 +67,37 @@ angular.module('breakouts').controller('BreakoutsController', ['$scope', '$http'
 
 		 	$http.post('/findBreakoutsBySession', {sessionNum : 1})
 		 		.success(function(data){
-		 			console.log("In breakout client controller. data is:  "+data+" Length is " +data.length)
+		 			// console.log("In breakout client controller. data is:  "+data+" Length is " +data.length)
 		 			$scope.sessOne = data;
 		 	});
 		 	$http.post('/findBreakoutsBySession', {sessionNum : 2})
 		 		.success(function(data){
-		 			console.log("In breakout client controller. data is:  "+data+" Length is " +data.length)
+		 			// console.log("In breakout client controller. data is:  "+data+" Length is " +data.length)
 		 			$scope.sessTwo = data;
 		 	});
 		 	$http.post('/findBreakoutsBySession', {sessionNum : 3})
 		 		.success(function(data){
-		 			console.log("In breakout client controller. data is:  "+data+" Length is " +data.length)
+		 			// console.log("In breakout client controller. data is:  "+data+" Length is " +data.length)
 		 			$scope.sessThree = data;
 		 	});
 		 	$http.post('/findBreakoutsBySession', {sessionNum : 4})
 		 		.success(function(data){
-		 			console.log("In breakout client controller. data is:  "+data+" Length is " +data.length)
+		 			// console.log("In breakout client controller. data is:  "+data+" Length is " +data.length)
 		 			$scope.sessFour = data;
 		 	});
 		 	$http.post('/findBreakoutsBySession', {sessionNum : 5})
 		 		.success(function(data){
-		 			console.log("In breakout client controller. data is:  "+data+" Length is " +data.length)
+		 			// console.log("In breakout client controller. data is:  "+data+" Length is " +data.length)
 		 			$scope.sessFive = data;
 		 	});
 		 	$http.post('/findBreakoutsBySession', {sessionNum : 6})
 		 		.success(function(data){
-		 			console.log("In breakout client controller. data is:  "+data+" Length is " +data.length)
+		 			// console.log("In breakout client controller. data is:  "+data+" Length is " +data.length)
 		 			$scope.sessSix = data;
 		 	});
 		 	$http.post('/findBreakoutsBySession', {sessionNum : 7})
 		 		.success(function(data){
-		 			console.log("In breakout client controller. data is:  "+data+" Length is " +data.length)
+		 			// console.log("In breakout client controller. data is:  "+data+" Length is " +data.length)
 		 			$scope.sessSeven = data;
 		 	});
 		};
@@ -106,7 +106,7 @@ angular.module('breakouts').controller('BreakoutsController', ['$scope', '$http'
 		function addUserToSession(sessionID, sessnNumber, sessnName, cmnt, usr){
 			$http.post('/addUserToSession', {sessID: sessionID, sessNumber: sessnNumber, sessName: sessnName, usrcmnt: cmnt, usertobeupdated: usr})
 			 		.success(function(data){
-			 			console.log("data after update is: "+JSON.stringify(data))
+			 			// console.log("Added user to session")
 			 	});
 		};
 
@@ -114,7 +114,7 @@ angular.module('breakouts').controller('BreakoutsController', ['$scope', '$http'
 
 		$scope.submitSchedule = function(){
 			var sessionsToBeUpdated = [];
-			console.log("inside breakouts.client.controller. scope.sessionone is: "+ JSON.stringify($scope.sessionform.sessionone))
+			// console.log("inside breakouts.client.controller. scope.sessionone is: "+ JSON.stringify($scope.sessionform.sessionone))
 
 			if($scope.sessionform.sessionone){sessionsToBeUpdated.push($scope.sessionform.sessionone)};
 			if($scope.sessionform.sessiontwo){sessionsToBeUpdated.push($scope.sessionform.sessiontwo)};
@@ -241,11 +241,11 @@ angular.module('breakouts').controller('BreakoutsController', ['$scope', '$http'
 			 			};
 			 		myContent.push($scope.objectForMyData);
 			 		$scope.myData = myContent;
-			 		console.log('Data ARRAY IS: ' + JSON.stringify($scope.myData))
+			 		// console.log('Data ARRAY IS: ' + JSON.stringify($scope.myData))
 			 	});
 		 	};
 
-		 	console.log('$.scopeData ARRAY IS: ' + JSON.stringify($scope.myData))
+		 	// console.log('$.scopeData ARRAY IS: ' + JSON.stringify($scope.myData))
 		};
 
 
@@ -270,7 +270,7 @@ $scope.displayBreakoutsWithOneName = function(colfield){
 			    	urlparameter=colfield;
 			    break;
 			};
-	console.log("inside showMe. colfield is: "+ colfield)
+	// console.log("inside showMe. colfield is: "+ colfield)
 	$location.path('/admin/grid/breakouts/'+urlparameter);
 };
 

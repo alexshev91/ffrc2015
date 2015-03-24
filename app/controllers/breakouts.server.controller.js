@@ -15,28 +15,28 @@ var mongoose = require('mongoose'),
 
 
 exports.findbysession = function(req,res){
-	console.log("in breakout server controller, req.body is: " + JSON.stringify(req.body));
+	// console.log("in breakout server controller, req.body is: " + JSON.stringify(req.body));
 
 	var sessNum = req.body.sessionNum;
     	Breakout.find({"sessionNumber": sessNum}, function(err, doc) {
     		if (err || !doc) {
     			throw 'Error'
     		} else {
-    			console.log("Breakout server controller. inside find. the document to be responded with is doc: " + JSON.stringify(doc));
+    			// console.log("Breakout server controller. inside find. the document to be responded with is doc: " + JSON.stringify(doc));
     			res.json(doc);
     		}
     	});
 };
 
 exports.findbyname = function(req,res){
-	console.log("in breakout server controller, findbyname, req.body is: " + JSON.stringify(req.body));
+	// console.log("in breakout server controller, findbyname, req.body is: " + JSON.stringify(req.body));
 
 	var brkoutname = req.body.breakoutName;
     	Breakout.find({"name": brkoutname}, function(err, doc) {
     		if (err || !doc) {
     			throw 'Error'
     		} else {
-    			console.log("Breakout server controller. inside findbyname the document to be responded with is doc: " + JSON.stringify(doc));
+    			// console.log("Breakout server controller. inside findbyname the document to be responded with is doc: " + JSON.stringify(doc));
     			res.json(doc);
     		}
     	});
@@ -75,7 +75,7 @@ exports.findusersofbreakout = function(req,res){
 
 
 exports.addUserToSession = function(req,res){
-	console.log('inside addUserToSession. req.body is: '+ JSON.stringify(req.body))
+	// console.log('inside addUserToSession. req.body is: '+ JSON.stringify(req.body))
 	var sessionid = req.body.sessID;
 	var sessionnumber = req.body.sessNumber;
 	var sessionname = req.body.sessName;
@@ -125,7 +125,7 @@ exports.addUserToSession = function(req,res){
 			console.log("error updating breakout with user: " + err);
 		} else {
 
-			console.log("Just updated breakout: "+ JSON.stringify(doc))
+			// console.log("Just updated breakout: "+ JSON.stringify(doc))
 
 			User.update({_id: usrid},updateQuery,function(err, doc) {
 				if (err || !doc) {
@@ -148,7 +148,7 @@ exports.finduserbyid = function(req,res){
     		if (err || !doc) {
     			throw 'Error'
     		} else {
-    			console.log("Breakout server controller. inside findusersofbreakout the document to be responded with is doc: " + JSON.stringify(doc));
+    			// console.log("Breakout server controller. inside findusersofbreakout the document to be responded with is doc: " + JSON.stringify(doc));
     			res.json(doc);
     		}
 
