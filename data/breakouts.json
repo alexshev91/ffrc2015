@@ -159,7 +159,7 @@
     "sessionNumber": 1,
     "name": "Nutrient/Health Claims",
     "roomName": "Pres 1",
-    "speaker": "Fred Mosher, Prime Label Consultants",
+    "speaker": "Fred Mosher, Prime Label Consultants   Kate Moreland, Morgan Foods",
     "description": "Understand the FDA and USDA requirements for this very well defined set of claims. Dive into expressed versus implied claims, such as Lean, Low Fat, Sodium, and Omega claims, amongst others.  Explore relative claims and the “Healthy” claim, as well as FDA’s three types of Health claims.  Examine Front of Package nutrient claims and the subtleties of their different requirements.",
     "maxCapacity": 18,
     "users": []
@@ -168,7 +168,7 @@
     "sessionNumber": 3,
     "name": "Nutrient/Health Claims",
     "roomName": "Left Ballroom",
-    "speaker": "Fred Mosher, Prime Label Consultants",
+    "speaker": "Fred Mosher, Prime Label Consultants   Kate Moreland, Morgan Foods",
     "description": "Understand the FDA and USDA requirements for this very well defined set of claims. Dive into expressed versus implied claims, such as Lean, Low Fat, Sodium, and Omega claims, amongst others.  Explore relative claims and the “Healthy” claim, as well as FDA’s three types of Health claims.  Examine Front of Package nutrient claims and the subtleties of their different requirements.",
     "maxCapacity": 45,
     "users": []
@@ -177,7 +177,7 @@
     "sessionNumber": 7,
     "name": "Nutrient/Health Claims",
     "roomName": "Middle Ballroom",
-    "speaker": "Fred Mosher, Prime Label Consultants",
+    "speaker": "Fred Mosher, Prime Label Consultants   Kate Moreland, Morgan Foods",
     "description": "Understand the FDA and USDA requirements for this very well defined set of claims. Dive into expressed versus implied claims, such as Lean, Low Fat, Sodium, and Omega claims, amongst others.  Explore relative claims and the “Healthy” claim, as well as FDA’s three types of Health claims.  Examine Front of Package nutrient claims and the subtleties of their different requirements.",
     "maxCapacity": 45,
     "users": []
@@ -335,7 +335,7 @@
     "sessionNumber": 2,
     "name": "USDA Labeling Q&A's",
     "roomName": "Boardroom 1",
-    "speaker": "Celia Yau, Prime Label Consultants    Jill Konecnik, John Morrell",
+    "speaker": "Celia Yau, Prime Label Consultants    Jill Konecnik, Smithfield   David Eaheart, Seaboard Foods",
     "description": "Explore the ins and outs of USDA labeling - such as product names & qualifiers; undefined RACC and nutrient claims; negative, uncured, organic and natural claims...  Bring your specific questions on the subtleties of labeling to our industry and PLC experts.",
     "maxCapacity": 18,
     "users": []
@@ -344,7 +344,7 @@
     "sessionNumber": 3,
     "name": "USDA Labeling Q&A's",
     "roomName": "Boardroom 1",
-    "speaker": "Celia Yau, Prime Label Consultants    Jill Konecnik, John Morrell",
+    "speaker": "Celia Yau, Prime Label Consultants    Jill Konecnik, Smithfield,  David Eaheart, Seaboard Foods",
     "description": "Explore the ins and outs of USDA labeling - such as product names & qualifiers; undefined RACC and nutrient claims; negative, uncured, organic and natural claims...  Bring your specific questions on the subtleties of labeling to our industry and PLC experts.",
     "maxCapacity": 18,
     "users": []
@@ -353,7 +353,7 @@
     "sessionNumber": 5,
     "name": "USDA Labeling Q&A's",
     "roomName": "Left Ballroom",
-    "speaker": "Celia Yau, Prime Label Consultants    Jill Konecnik, John Morrell  USDA-FSIS-LPDS staff",
+    "speaker": "Celia Yau, Prime Label Consultants    Jill Konecnik, Smithfield,  David Eaheart, Seaboard Foods  USDA-FSIS-LPDS staff",
     "description": "Explore the ins and outs of USDA labeling - such as product names & qualifiers; undefined RACC and nutrient claims; negative, uncured, organic and natural claims...  Bring your specific questions on the subtleties of labeling to our industry and PLC experts.",
     "maxCapacity": 45,
     "users": []
@@ -362,7 +362,7 @@
     "sessionNumber": 6,
     "name": "USDA Labeling Q&A's",
     "roomName": "Boardroom 1",
-    "speaker": "Celia Yau, Prime Label Consultants    Jill Konecnik, John Morrell",
+    "speaker": "Celia Yau, Prime Label Consultants    Jill Konecnik, Smithfield,  David Eaheart, Seaboard Foods",
     "description": "Explore the ins and outs of USDA labeling - such as product names & qualifiers; undefined RACC and nutrient claims; negative, uncured, organic and natural claims...  Bring your specific questions on the subtleties of labeling to our industry and PLC experts.",
     "maxCapacity": 18,
     "users": []
@@ -371,7 +371,7 @@
     "sessionNumber": 7,
     "name": "USDA Labeling Q&A's",
     "roomName": "Boardroom 1",
-    "speaker": "Celia Yau, Prime Label Consultants    Jill Konecnik, John Morrell",
+    "speaker": "Celia Yau, Prime Label Consultants    Jill Konecnik, Smithfield,  David Eaheart, Seaboard Foods",
     "description": "Explore the ins and outs of USDA labeling - such as product names & qualifiers; undefined RACC and nutrient claims; negative, uncured, organic and natural claims...  Bring your specific questions on the subtleties of labeling to our industry and PLC experts.",
     "maxCapacity": 18,
     "users": []

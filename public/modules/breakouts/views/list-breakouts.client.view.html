@@ -36,7 +36,7 @@
 <section data-ng-controller="BreakoutsController" data-ng-init="find()">
     <div class="page-header">
         <h1>Breakout Session Schedule</h1>
-        <h4 class="setcolor">Welcome, {{authentication.user.firstName}} {{authentication.user.lastName}}! Please select your breakout session schedule below.</h4>
+        <h4 class="setcolor">Welcome, {{authentication.user.firstName}} {{authentication.user.lastName}}! Please select your breakout session schedule and submit your breakout questions below.</h4>
     </div>
 
 <form data-ng-submit="submitSchedule()" name='sessionform'>
@@ -198,6 +198,7 @@
 
     <div class="form-actions" id="thebutton">
         <div id="cntrthebutton">
+            <div class='text' style='color: red;'>Please confirm your choices carefully as we will only be able to accommodate changes at conference registration.</div>
             <button type="submit" class="btn btn-primary btn-lg btn-block">Submit your schedule</button>
         </div>
     </div>
@@ -207,9 +208,6 @@
 
 </form>
 
-    <div class="alert alert-warning text-center" data-ng-hide="!breakouts.$resolved || breakouts.length">
-    	No Breakouts yet, why don't you <a href="/#!/breakouts/create">create one</a>?
-    </div>
 </section>
 
 
