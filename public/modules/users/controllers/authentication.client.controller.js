@@ -22,7 +22,7 @@ angular.module('users').controller('AuthenticationController', ['$scope', '$http
 						$scope.error = response.message;
 					});
 				} else {
-					$scope.authentication.user = response
+					$scope.authentication.user = response;
 					$location.path('schedule/users/' + response._id)
 				}
 

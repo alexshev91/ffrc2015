@@ -17,14 +17,28 @@ var _ = require('lodash'),
 
 
 exports.finduserindb = function(req, res){
+
 	var emailaddress = req.body.email;
 	console.log("in finduserindb request.body is: "+JSON.stringify(req.body))
 	User.findOne({email: emailaddress}, function(err, user){
 		if(err){
 			console.log("error finding user in db")
 		} else {
-			console.log('found user in db' + JSON.stringify(user))
-			res.json(user)
+
+			if(user !== null){
+				console.log('found user in db' + JSON.stringify(user))
+				req.login(user, function(err) {
+					if (err) {
+						res.status(400).send(err);
+					} else {
+						res.json(user);
+					}
+				});
+			} else{
+				console.log('found user in db' + JSON.stringify(user))
+				res.json(user)
+			}
+
 		}
 	})
 
