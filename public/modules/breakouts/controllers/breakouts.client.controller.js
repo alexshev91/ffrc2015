@@ -1,8 +1,8 @@
 'use strict';
 
 // Breakouts controller
-angular.module('breakouts').controller('BreakoutsController', ['$scope', '$http', '$stateParams', '$window','$location', 'Authentication', 'Breakouts',
-	function($scope, $http, $stateParams, $window, $location, Authentication, Breakouts) {
+angular.module('breakouts').controller('BreakoutsController', ['$scope', '$http', '$stateParams', '$state','$window','$location', 'Authentication', 'Breakouts',
+	function($scope, $http, $stateParams, $state, $window, $location, Authentication, Breakouts) {
 		$scope.authentication = Authentication;
 
 		// Create new Breakout
@@ -41,10 +41,21 @@ angular.module('breakouts').controller('BreakoutsController', ['$scope', '$http'
 		};
 
 		$scope.goBackToBreakouts = function(){
+			$scope.$apply();
+				$state.go('listBreakouts', {}, {reload: true});
 
-			$location.path('/breakouts')
-			// $route.reload()
-			$window.location.reload()
+
+
+			// $location.path('/breakouts')
+
+			// $window.location.reload()
+
+
+
+						// $route.reload()
+
+
+
 			// $window.location.href = '#!/breakouts';
 			// $window.location= '#!/breakouts';
 		}
@@ -64,6 +75,8 @@ angular.module('breakouts').controller('BreakoutsController', ['$scope', '$http'
 
 		// Find a list of Breakouts by Session
 		$scope.find = function() {
+			// $state.reload();
+			// $window.location.reload()
 			if($scope.authentication.user.sessions.sessionOne.name != 'Not Signed Up' && $scope.authentication.user.sessions.sessionTwo.name != 'Not Signed Up' && $scope.authentication.user.sessions.sessionThree.name != 'Not Signed Up' && $scope.authentication.user.sessions.sessionFour.name != 'Not Signed Up' && $scope.authentication.user.sessions.sessionFive.name != 'Not Signed Up' && $scope.authentication.user.sessions.sessionSix.name != 'Not Signed Up' && $scope.authentication.user.sessions.sessionSeven.name != 'Not Signed Up'){
 				$location.path('schedule/users/' + $scope.authentication.user._id);
 			}
@@ -120,13 +133,34 @@ angular.module('breakouts').controller('BreakoutsController', ['$scope', '$http'
 			var sessionsToBeUpdated = [];
 			// console.log("inside breakouts.client.controller. scope.sessionone is: "+ JSON.stringify($scope.sessionform.sessionone))
 
-			if($scope.sessionform.sessionone){sessionsToBeUpdated.push($scope.sessionform.sessionone)};
-			if($scope.sessionform.sessiontwo){sessionsToBeUpdated.push($scope.sessionform.sessiontwo)};
-			if($scope.sessionform.sessionthree){sessionsToBeUpdated.push($scope.sessionform.sessionthree)};
-			if($scope.sessionform.sessionfour){sessionsToBeUpdated.push($scope.sessionform.sessionfour)};
-			if($scope.sessionform.sessionfive){sessionsToBeUpdated.push($scope.sessionform.sessionfive)};
-			if($scope.sessionform.sessionsix){sessionsToBeUpdated.push($scope.sessionform.sessionsix)};
-			if($scope.sessionform.sessionseven){sessionsToBeUpdated.push($scope.sessionform.sessionseven)};
+			if($scope.sessionform.sessionone){
+				sessionsToBeUpdated.push($scope.sessionform.sessionone);
+				$scope.authentication.user.sessions.sessionOne.name = $scope.sessionform.sessionone.name;
+			};
+			if($scope.sessionform.sessiontwo){
+				sessionsToBeUpdated.push($scope.sessionform.sessiontwo);
+				$scope.authentication.user.sessions.sessionTwo.name = $scope.sessionform.sessiontwo.name;
+			};
+			if($scope.sessionform.sessionthree){
+				sessionsToBeUpdated.push($scope.sessionform.sessionthree);
+				$scope.authentication.user.sessions.sessionThree.name = $scope.sessionform.sessionthree.name;
+			};
+			if($scope.sessionform.sessionfour){
+				sessionsToBeUpdated.push($scope.sessionform.sessionfour);
+				$scope.authentication.user.sessions.sessionFour.name = $scope.sessionform.sessionfour.name;
+			};
+			if($scope.sessionform.sessionfive){
+				sessionsToBeUpdated.push($scope.sessionform.sessionfive);
+				$scope.authentication.user.sessions.sessionFive.name = $scope.sessionform.sessionfive.name;
+			};
+			if($scope.sessionform.sessionsix){
+				sessionsToBeUpdated.push($scope.sessionform.sessionsix);
+				$scope.authentication.user.sessions.sessionSix.name = $scope.sessionform.sessionsix.name;
+			};
+			if($scope.sessionform.sessionseven){
+				sessionsToBeUpdated.push($scope.sessionform.sessionseven);
+				$scope.authentication.user.sessions.sessionSeven.name = $scope.sessionform.sessionseven.name;
+			};
 
 			var tobeupdateduser = $scope.authentication.user;
 			var usersemail = $scope.authentication.user.email;
