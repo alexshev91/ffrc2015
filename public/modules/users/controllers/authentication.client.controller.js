@@ -12,6 +12,10 @@ angular.module('users').controller('AuthenticationController', ['$scope', '$http
 				// console.log('in checkifuserisindb response is: '+JSON.stringify(response));
 
 				if(response === "null"){
+
+					var lowercaseemail = $scope.credentials.email.toLowerCase();
+					$scope.credentials.email = lowercaseemail;
+
 					$http.post('/auth/signup', $scope.credentials).success(function(response) {
 						// If successful we assign the response to the global user model
 						$scope.authentication.user = response;

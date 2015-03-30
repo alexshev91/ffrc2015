@@ -18,9 +18,12 @@ var _ = require('lodash'),
 
 exports.finduserindb = function(req, res){
 
+	// var emailaddress = req.body.email.toLowerCase();
+	// db.collection.find( { "name" : { $regex : new RegExp(thename, "i") } } );
 	var emailaddress = req.body.email;
 	console.log("in finduserindb request.body is: "+JSON.stringify(req.body))
-	User.findOne({email: emailaddress}, function(err, user){
+	// User.findOne({email: emailaddress}, function(err, user){
+	User.findOne({email:  { $regex : new RegExp(emailaddress, "i") }}, function(err, user){
 		if(err){
 			console.log("error finding user in db")
 		} else {

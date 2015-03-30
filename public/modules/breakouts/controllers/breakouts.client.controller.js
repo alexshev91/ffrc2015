@@ -41,8 +41,12 @@ angular.module('breakouts').controller('BreakoutsController', ['$scope', '$http'
 		};
 
 		$scope.goBackToBreakouts = function(){
-			$window.location.reload()
+
 			$location.path('/breakouts')
+			// $route.reload()
+			$window.location.reload()
+			// $window.location.href = '#!/breakouts';
+			// $window.location= '#!/breakouts';
 		}
 
 
