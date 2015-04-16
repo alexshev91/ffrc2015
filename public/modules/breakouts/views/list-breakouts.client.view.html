@@ -132,7 +132,8 @@
 <div class='container' data-ng-show="authentication.user.sessions.sessionFive.name === 'Not Signed Up'">
     <h3><div class="attndnc">Session 5: Tuesday 11am-12pm</div><h5 class="attndnc" id="attendance">(FSIS LPDS attendance)</h5></h3>
     <div class='list-group'>
-        <label class="list-group-item col-md-6 odd" for="{{breakout}}" ng-repeat="breakout in sessFive" data-ng-hide="breakout.name === 'Product Naming & Ingredient Labeling' || breakout.name ==='Flavor Labeling' || breakout.name === 'Generic Labeling Update' ">
+    <!-- data-ng-hide="breakout.name === 'Product Naming & Ingredient Labeling' || breakout.name ==='Flavor Labeling' || breakout.name === 'Generic Labeling Update' " -->
+        <label class="list-group-item col-md-6 odd" for="{{breakout}}" ng-repeat="breakout in sessFive" >
             <div popover="{{breakout.description}}" popover-title='{{breakout.speaker}}' popover-trigger="mouseenter">
                     <input id="{{breakout}}" type="radio"
                     ng-model="sessionform.sessionfive" data-ng-value="breakout">
@@ -153,7 +154,8 @@
 <div class='container' data-ng-show="authentication.user.sessions.sessionSix.name === 'Not Signed Up'">
     <h3>Session 6: Tuesday 1:10pm-2:10pm</h3>
     <div class='list-group'>
-        <label class="list-group-item col-md-6 odd" for="{{breakout}}" ng-repeat="breakout in sessSix" data-ng-hide="breakout.name==='FDA Labeling Q&A\'s' ">
+    <!-- data-ng-hide="breakout.name==='FDA Labeling Q&A\'s' " -->
+        <label class="list-group-item col-md-6 odd" for="{{breakout}}" ng-repeat="breakout in sessSix" >
             <div popover="{{breakout.description}}" popover-title='{{breakout.speaker}}' popover-trigger="mouseenter">
                     <input id="{{breakout}}" type="radio"
                     ng-model="sessionform.sessionsix" data-ng-value="breakout">
