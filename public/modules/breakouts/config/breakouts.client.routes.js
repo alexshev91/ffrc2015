@@ -7,7 +7,8 @@ angular.module('breakouts').config(['$stateProvider',
 		$stateProvider.
 		state('listBreakouts', {
 			url: '/breakouts',
-			templateUrl: 'modules/breakouts/views/list-breakouts.client.view.html'
+			// templateUrl: 'modules/breakouts/views/list-breakouts.client.view.html'
+			templateUrl: 'modules/breakouts/views/registrationClosed-breakout.client.view.html'
 		}).
 		state('createBreakout', {
 			url: '/breakouts/create',

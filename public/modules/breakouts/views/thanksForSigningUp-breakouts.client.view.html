@@ -13,7 +13,7 @@
 
 
 
-<section data-ng-controller="BreakoutsController" data-ng-init="findUserForAdmin()" style="margin-bottom:65px;">
+<section data-ng-controller="BreakoutsController" style="margin-bottom:65px;">
 
 
 
@@ -62,13 +62,13 @@
                   Prime Label Consultants Team
                   </p>
         </div>
-        <div id="thebutton" data-ng-show="userinfo.sessions.sessionOne.name === 'Not Signed Up' || userinfo.sessions.sessionTwo.name === 'Not Signed Up' || userinfo.sessions.sessionThree.name === 'Not Signed Up' || userinfo.sessions.sessionFour.name === 'Not Signed Up' || userinfo.sessions.sessionFive.name === 'Not Signed Up' || userinfo.sessions.sessionSix.name === 'Not Signed Up' || userinfo.sessions.sessionSeven.name === 'Not Signed Up'">
+<!--         <div id="thebutton" data-ng-show="userinfo.sessions.sessionOne.name === 'Not Signed Up' || userinfo.sessions.sessionTwo.name === 'Not Signed Up' || userinfo.sessions.sessionThree.name === 'Not Signed Up' || userinfo.sessions.sessionFour.name === 'Not Signed Up' || userinfo.sessions.sessionFive.name === 'Not Signed Up' || userinfo.sessions.sessionSix.name === 'Not Signed Up' || userinfo.sessions.sessionSeven.name === 'Not Signed Up'">
             <div id="cntrthebutton">
-                <!-- <button class="btn btn-primary btn-lg btn-block" data-ng-click='goBackToBreakouts()'>Complete your schedule</button> -->
+
                 <a class="btn btn-primary btn-lg btn-block" ng-href='/#!/breakouts'>Complete your schedule</a>
 
             </div>
-        </div>
+        </div> -->
 
 
         <a href="/auth/signout">Signout</a>
