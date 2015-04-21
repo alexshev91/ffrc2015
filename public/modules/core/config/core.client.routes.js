@@ -10,7 +10,7 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
 		$stateProvider.
 		state('home', {
 			url: '/2015breakoutsignup',
-			templateUrl: 'modules/breakouts/views/authentication/signup.client.view.html'
+			templateUrl: 'modules/users/views/authentication/signup.client.view.html'
 		});
 	}
 ]);
